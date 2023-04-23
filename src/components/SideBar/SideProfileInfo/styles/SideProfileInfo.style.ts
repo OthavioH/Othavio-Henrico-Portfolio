@@ -46,7 +46,7 @@ export const Role = styled.p`
   text-align: start;
 `;
 
-export const SectionTitle = styled.p`
+export const DivisionTitle = styled.p`
   width: 100%;
   font-size: 20px;
 

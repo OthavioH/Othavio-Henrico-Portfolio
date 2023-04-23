@@ -3,7 +3,7 @@ import SocialLinks from "../SocialLinks/SocialLinkts";
 import SideBarHeader from "./SideBarHeader/SideBarHeader";
 import {
   LinksWrapper,
-  SectionTitle,
+  DivisionTitle,
   SideBar,
 } from "./styles/SideProfileInfo.style";
 
@@ -11,13 +11,13 @@ export default function SideProfileInfo() {
   return (
     <SideBar>
       <SideBarHeader />
-      <SectionTitle>Stacks</SectionTitle>
+      <DivisionTitle>Stacks</DivisionTitle>
       <SideStackComponent title="React JS" imgUrl="react_icon.png" />
       <SideStackComponent title="Node JS" imgUrl="node_icon.png" />
       <SideStackComponent title="Angular" imgUrl="angular_icon.png" />
       <SideStackComponent title="Java" imgUrl="java_icon.png" />
       <SideStackComponent title="Flutter" imgUrl="flutter_icon.png" />
-      <SectionTitle>Social Media</SectionTitle>
+      <DivisionTitle>Social Media</DivisionTitle>
       <LinksWrapper>
         <SocialLinks
           title="LinkedIn"
