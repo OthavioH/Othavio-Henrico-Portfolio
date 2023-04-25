@@ -1,8 +1,12 @@
 import styled from "styled-components";
 import { SectionArticle } from "../../../styles/App.style";
 import {
+  decreaseWidthAnimation,
   fadeAndSlideToLeftInAnimation,
+  increaseWidthAnimation,
+  inverseUpsideDownAnimation,
   underlineTextAnimation,
+  upsideDownAnimation,
 } from "../../../styles/Animations.style";
 
 export const SectionWrapper = styled.div`
@@ -33,16 +37,60 @@ export const ExpeciencesArticle = styled(SectionArticle)`
 
 export const WorkExperienceItem = styled.div`
   min-width: 290px;
-  height: 100px;
+  height: fit-content;
   padding: 10px 22px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-shadow: 0px 0px 12px 0px #000;
+  border-radius: 16px;
+
+  &.expanded {
+    animation: ${increaseWidthAnimation} 0.5s ease-in-out forwards;
+  }
+
+  &.collapsed {
+    animation: ${decreaseWidthAnimation} 0.5s ease-in-out forwards;
+  }
+`;
+
+export const WorkExperienceHeader = styled.div`
+  width: 100%;
+  height: 100px;
 
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 0.5px solid transparent;
 
-  box-shadow: 0px 0px 12px 0px #000;
-  border-radius: 16px;
+  &.expanded {
+    border-bottom-color: #fff;
+  }
+
+  &.collapsed {
+    border-bottom-color: transparent;
+  }
+`;
+
+export const WorkExperienceDescription = styled.div`
+  width: 100%;
+  height: fit-content;
+  padding: 10px 22px;
+
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &.expanded {
+    display: flex;
+  }
+
+  &.collapsed {
+    display: none;
+  }
 `;
 
 export const WorkExperienceInfo = styled.div`
@@ -70,6 +118,14 @@ export const WorkExperienceCompanyDate = styled.p`
 export const ArrowDownIcon = styled.img`
   width: 50px;
   height: 50px;
+
+  &.expanded {
+    animation: ${upsideDownAnimation} 0.5s ease-in-out forwards;
+  }
+
+  &.collapsed {
+    animation: ${inverseUpsideDownAnimation} 0.5s ease-in-out forwards;
+  }
 `;
 
 export const IconButton = styled.button`

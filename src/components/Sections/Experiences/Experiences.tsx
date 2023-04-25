@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Stack } from "../../../shared/models/Stack";
 import { SectionTitle } from "../../../styles/App.style";
 import SectionSubtitle from "../SectionSubtitle/SectionSubtitle";
@@ -12,9 +11,6 @@ import SideProject from "./SideProject/SideProject";
 import WorkExperience from "./WorkExperience/WorkExperience";
 
 export default function Experiences() {
-  const [isWorkExperienceOpen, setIsWorkExperienceOpen] = useState(false);
-  const [isSideProjectOpen, setIsSideProjectOpen] = useState(false);
-
   return (
     <ExpeciencesArticle>
       <SectionTitle>Experiences</SectionTitle>
@@ -25,11 +21,23 @@ export default function Experiences() {
             companyName="Tokenlab"
             companyRole="Web Developer"
             workingPeriod="May/2021 - Feb/2023"
+            description="Na Tokenlab ajudei no desenvolvimento de alguns projetos utilizando Flutter Web, Angular, Node.js, HTML, CSS, SASS, DDD (Domain Driver Design), Docker, BLoC e Designs responsivos. Também usei muito o jira para a gestão do time, além do figma, bitbucket e utilizando SCRUM e Kanban.
+            
+Projetos realizados:
+
+- Cinemark ATM - Máquina de autoatendimento para as redes Cinemark. O projeto foi desenvolvido em Flutter Web, onde aprendi muito sobre a tecnologia, seus widgets, design patterns que melhoram o desenvolvimento e aprimorei minhas habilidades profissionais colaborativas. - Ago/2021 - Maio/2022.
+
+- MyPromo - Website e aplicativo que tem a proposta de auxiliar os consumidores com suas compras nos mercados. 2022 - Novembro de 2022.
+
+- Manutenção do website da empresa. 2022 - 2023"
+            skillList={["React", "Typescript", "Node"]}
           />
           <WorkExperience
             companyName="IFMATH"
             companyRole="FullStack Developer"
             workingPeriod="Feb/2020 - Apr/2021"
+            description="Ajudar no desenvolvimento do site IFMATH, que é um software com intuito de ensinar matemática. O desenvolvimento foi feito utilizando Angular, Java Spring Boot, Git, CSS, SASS, HTML e designs responsivos."
+            skillList={["React", "Typescript", "Node"]}
           />
         </WorkListWrapper>
       </SectionWrapper>

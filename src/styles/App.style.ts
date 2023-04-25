@@ -6,6 +6,10 @@ export const AppMain = styled.main`
   align-items: flex-start;
   justify-content: center;
   padding: 56px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const SectionArticle = styled.article`
