@@ -10,10 +10,7 @@ interface SectionSubtitleProps {
   [key: string]: any;
 }
 
-export default function SectionSubtitle({
-  subtitle,
-  ...props
-}: SectionSubtitleProps) {
+export default function SectionSubtitle({ subtitle }: SectionSubtitleProps) {
   return (
     <SubtitleWrapper>
       <SubtitleText>{subtitle}</SubtitleText>
