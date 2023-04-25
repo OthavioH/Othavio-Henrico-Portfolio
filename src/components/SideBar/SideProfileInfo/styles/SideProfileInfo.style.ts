@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { fadeAndSlideToRightInAnimation } from "../../../../styles/Animations.style";
 
 export const SideBar = styled.aside`
   width: fit-content;
@@ -11,6 +12,8 @@ export const SideBar = styled.aside`
   background-color: #101213;
   border-radius: 16px;
   box-shadow: 0px 0px 20px 0px #000;
+
+  animation: ${fadeAndSlideToRightInAnimation} 0.8s ease-out;
 `;
 
 export const ProfileIconWrapper = styled.div`
