@@ -1,14 +1,6 @@
 import styled from "styled-components";
-
-export const AboutMeContainer = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-
-  gap: 20px;
-`;
+import { SectionArticle } from "../../../../styles/App.style";
+import { fadeAndSlideToLeftInAnimation } from "../../../../styles/Animations.style";
 
 export const TextWrapper = styled.div`
   width: 100%;
@@ -23,4 +15,8 @@ export const AboutMeText = styled.p`
   font-size: 16px;
 
   text-align: justify;
+`;
+
+export const AboutMeArticle = styled(SectionArticle)`
+  animation: ${fadeAndSlideToLeftInAnimation} 1.5s ease-out;
 `;

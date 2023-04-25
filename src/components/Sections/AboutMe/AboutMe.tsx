@@ -1,13 +1,13 @@
 import { SectionTitle } from "../../../styles/App.style";
 import {
-  AboutMeContainer,
+  AboutMeArticle,
   AboutMeText,
   TextWrapper,
 } from "./styles/AboutMe.style";
 
 export default function AboutMe() {
   return (
-    <AboutMeContainer>
+    <AboutMeArticle>
       <SectionTitle>About Me</SectionTitle>
       <TextWrapper>
         <AboutMeText>
@@ -29,6 +29,6 @@ export default function AboutMe() {
           </p>
         </AboutMeText>
       </TextWrapper>
-    </AboutMeContainer>
+    </AboutMeArticle>
   );
 }
