@@ -58,12 +58,11 @@ export const WorkExperienceItem = styled.div`
   }
 
   &.collapsed {
-    animation: ${decreaseWidthAnimation} 0.5s ease-in-out forwards;
+    animation: ${decreaseWidthAnimation} 0.5s ease-in-out;
   }
 
   @media (max-width: 768px) {
     width: 100%;
-    min-width:100%;
   }
 `;
 
