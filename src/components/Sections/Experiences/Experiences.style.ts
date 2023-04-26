@@ -67,6 +67,14 @@ export const WorkExperienceItem = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
+
+    &.expanded {
+      animation: none;
+    }
+
+    &.collapsed {
+      animation: none;
+    }
   }
 `;
 
