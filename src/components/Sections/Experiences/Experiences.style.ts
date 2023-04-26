@@ -42,6 +42,7 @@ export const ExpeciencesArticle = styled(SectionArticle)`
 
 export const WorkExperienceItem = styled.div`
   min-width: 290px;
+  width: auto;
   height: fit-content;
   padding: 10px 22px;
 
@@ -62,6 +63,7 @@ export const WorkExperienceItem = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
+    min-width:100%;
   }
 `;
 
