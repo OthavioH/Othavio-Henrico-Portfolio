@@ -30,6 +30,10 @@ export const SectionsContainer = styled.div`
   align-items: center;
   justify-content: flex-start;
   gap: 32px;
+  
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const SectionTitle = styled.p`
