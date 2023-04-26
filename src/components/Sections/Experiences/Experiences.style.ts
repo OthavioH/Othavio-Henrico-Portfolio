@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { SectionArticle } from "../../../styles/App.style";
 import {
   decreaseWidthAnimation,
-  fadeAndSlideToLeftInAnimation,
+  fadeAndSlideUpInAnimation,
   increaseWidthAnimation,
   inverseUpsideDownAnimation,
   underlineTextAnimation,
@@ -20,7 +20,7 @@ export const SectionWrapper = styled.div`
   gap: 20px;
 
   @media (max-width: 768px) {
-    width: 100%;  
+    width: 100%;
   }
 `;
 
@@ -36,33 +36,33 @@ export const WorkListWrapper = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
   }
 `;
 
 export const ExpeciencesArticle = styled(SectionArticle)`
-  animation: ${fadeAndSlideToLeftInAnimation} 2.5s ease-in-out;
+  animation: ${fadeAndSlideUpInAnimation} 2.5s ease-in-out;
 `;
 
 export const WorkExperienceItem = styled.div`
   min-width: 290px;
   width: auto;
   height: fit-content;
-  padding: 10px 22px;
+  padding: 2px 22px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  box-shadow: 0px 0px 12px 0px rgba(137, 249, 109, 0.4);
+  box-shadow: 0px 0px 8px 0px rgba(137, 249, 109, 0.4);
   border-radius: 16px;
 
   &.expanded {
-    animation: ${increaseWidthAnimation} 0.5s ease-in-out forwards;
+    animation: ${increaseWidthAnimation} 1s ease-in-out forwards;
   }
 
   &.collapsed {
-    animation: ${decreaseWidthAnimation} 0.5s ease-in-out;
+    animation: ${decreaseWidthAnimation} 1s ease-in-out;
   }
 
   @media (max-width: 768px) {
@@ -163,11 +163,23 @@ export const SideProjectsList = styled.div`
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 22px;
 
   @media (max-width: 768px) {
     justify-content: center;
   }
+`;
+
+export const SideProjectImageFilter = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: saturate(0%);
+  z-index: 9999;
+  border-radius: 16px 16px 0px 0px;
 `;
 
 export const SideProjectWrapper = styled.div`
@@ -180,13 +192,30 @@ export const SideProjectWrapper = styled.div`
   align-items: center;
   justify-content: flex-start;
 
-  box-shadow: 0px 0px 12px 0px rgba(137, 249, 109, 0.4);
+  box-shadow: 0px 0px 8px 0px rgba(137, 249, 109, 0.4);
   border-radius: 30px;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(90%);
+  }
+
+  &:hover ${SideProjectImageFilter} {
+    backdrop-filter: saturate(100%);
+  }
 `;
 
 export const SideProjectImage = styled.img`
   width: 100%;
   min-height: 120px;
+  border-radius: 16px 16px 0px 0px;
+`;
+
+export const SideProjectImageWrapper = styled.div`
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  z-index: 9999;
   border-radius: 16px 16px 0px 0px;
 `;
 

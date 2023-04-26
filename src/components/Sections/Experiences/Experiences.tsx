@@ -21,23 +21,51 @@ export default function Experiences() {
             companyName="Tokenlab"
             companyRole="Web Developer"
             workingPeriod="May/2021 - Feb/2023"
-            description="Na Tokenlab ajudei no desenvolvimento de alguns projetos utilizando Flutter Web, Angular, Node.js, HTML, CSS, SASS, DDD (Domain Driver Design), Docker, BLoC e Designs responsivos. Também usei muito o jira para a gestão do time, além do figma, bitbucket e utilizando SCRUM e Kanban.
-            
-Projetos realizados:
+            description="At Tokenlab, I helped develop some projects using Flutter Web, Angular, Node.js, HTML, CSS, SASS, DDD (Domain Driver Design), Docker, BLoC, and Responsive Designs. I also used Jira extensively for team management, as well as Figma, Bitbucket, and utilized SCRUM and Kanban.
 
-- Cinemark ATM - Máquina de autoatendimento para as redes Cinemark. O projeto foi desenvolvido em Flutter Web, onde aprendi muito sobre a tecnologia, seus widgets, design patterns que melhoram o desenvolvimento e aprimorei minhas habilidades profissionais colaborativas. - Ago/2021 - Maio/2022.
+Projects Completed:
 
-- MyPromo - Website e aplicativo que tem a proposta de auxiliar os consumidores com suas compras nos mercados. 2022 - Novembro de 2022.
+Cinemark ATM - Self-service machine for the Cinemark cinema chain. The project was developed in Flutter Web, where I learned a lot about the technology, its widgets, design patterns that improve development, and enhanced my collaborative professional skills. - Aug/2021 - May/2022.
 
-- Manutenção do website da empresa. 2022 - 2023"
-            skillList={["React", "Typescript", "Node"]}
+MyPromo - Website and application that aims to assist consumers with their supermarket shopping. 2022 - November 2022.
+
+Tokenlab Website Maintenance. 2022 - 2023."
+            skillList={[
+              "NodeJS",
+              "Typescript",
+              "Angular",
+              "Flutter",
+              "Docker",
+              "DDD",
+              "BLoC",
+              "SCRUM",
+              "Kanban",
+              "Jira",
+              "Bitbucket",
+              "Figma",
+              "HTML",
+              "CSS",
+              "SASS",
+              "Responsive Designs",
+              "Flutter Web",
+              "Team Collaboration",
+            ]}
           />
           <WorkExperience
             companyName="IFMATH"
             companyRole="FullStack Developer"
             workingPeriod="Feb/2020 - Apr/2021"
-            description="Ajudar no desenvolvimento do site IFMATH, que é um software com intuito de ensinar matemática. O desenvolvimento foi feito utilizando Angular, Java Spring Boot, Git, CSS, SASS, HTML e designs responsivos."
-            skillList={["React", "Typescript", "Node"]}
+            description="Helping in the development of the IFMATH website, which is a software aimed at teaching mathematics. The development was done using Angular, Java Spring Boot, Git, CSS, SASS, HTML, and responsive designs."
+            skillList={[
+              "TDD",
+              "Java Spring Boot",
+              "Angular",
+              "TypeScript",
+              "Team Collaboration",
+              "Git",
+              "SASS",
+              "HTML",
+            ]}
           />
         </WorkListWrapper>
       </SectionWrapper>
@@ -48,23 +76,11 @@ Projetos realizados:
             projectName="RPG Sheet System"
             projectDate="2021/2023"
             thumbnailURL="https://user-images.githubusercontent.com/46772924/222441892-d5fcdfb9-8fa4-4f8c-9aad-9b370cb50236.png"
-            stacks={[Stack.REACT, Stack.TYPESCRIPT, Stack.NODE]}
+            stacks={[Stack.ANGULAR, Stack.TYPESCRIPT, Stack.NODE]}
           />
           <SideProject
-            projectName="RPG Sheet System"
-            projectDate="2021/2023"
-            thumbnailURL="https://user-images.githubusercontent.com/46772924/227333692-31cb77ba-d153-4db8-9bce-afe85f59c523.png"
-            stacks={[Stack.REACT, Stack.TYPESCRIPT, Stack.NODE]}
-          />
-          <SideProject
-            projectName="RPG Sheet System"
-            projectDate="2021/2023"
-            thumbnailURL="https://user-images.githubusercontent.com/46772924/227333692-31cb77ba-d153-4db8-9bce-afe85f59c523.png"
-            stacks={[Stack.REACT, Stack.TYPESCRIPT, Stack.NODE]}
-          />
-          <SideProject
-            projectName="RPG Sheet System"
-            projectDate="2021/2023"
+            projectName="Marvel Comics E-Commerce"
+            projectDate="2023"
             thumbnailURL="https://user-images.githubusercontent.com/46772924/227333692-31cb77ba-d153-4db8-9bce-afe85f59c523.png"
             stacks={[Stack.REACT, Stack.TYPESCRIPT, Stack.NODE]}
           />
