@@ -29,6 +29,11 @@ export const WorkListWrapper = styled.div`
   flex-wrap: wrap;
 
   gap: 16px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content:center;
+  }
 `;
 
 export const ExpeciencesArticle = styled(SectionArticle)`
@@ -53,6 +58,10 @@ export const WorkExperienceItem = styled.div`
 
   &.collapsed {
     animation: ${decreaseWidthAnimation} 0.5s ease-in-out forwards;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
   }
 `;
 
@@ -142,6 +151,10 @@ export const SideProjectsList = styled.div`
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 16px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 `;
 
 export const SideProjectWrapper = styled.div`
@@ -156,10 +169,6 @@ export const SideProjectWrapper = styled.div`
 
   box-shadow: 0px 0px 12px 0px #000;
   border-radius: 30px;
-  
-  @media (max-width: 768px) {
-    width: 100%;
-  }
 `;
 
 export const SideProjectImage = styled.img`
