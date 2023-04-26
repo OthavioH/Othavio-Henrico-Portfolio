@@ -18,6 +18,10 @@ export const SectionWrapper = styled.div`
     animation: ${underlineTextAnimation} 0.5s ease-in-out forwards;
   }
   gap: 20px;
+
+  @media (max-width: 768px) {
+    width: 100%;  
+  }
 `;
 
 export const WorkListWrapper = styled.div`
