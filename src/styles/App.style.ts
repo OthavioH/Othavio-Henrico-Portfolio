@@ -9,7 +9,7 @@ export const AppMain = styled.main`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    padding: 56px 0px;
+    padding: 56px 16px;
     align-items: center;
   }
 `;
