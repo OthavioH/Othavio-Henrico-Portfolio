@@ -54,7 +54,7 @@ export const WorkExperienceItem = styled.div`
   flex-direction: column;
   align-items: center;
 
-  box-shadow: 0px 0px 12px 0px #000;
+  box-shadow: 0px 0px 12px 0px rgba(137, 249, 109, 0.4);
   border-radius: 16px;
 
   &.expanded {
@@ -180,7 +180,7 @@ export const SideProjectWrapper = styled.div`
   align-items: center;
   justify-content: flex-start;
 
-  box-shadow: 0px 0px 12px 0px #000;
+  box-shadow: 0px 0px 12px 0px rgba(137, 249, 109, 0.4);
   border-radius: 30px;
 `;
 
