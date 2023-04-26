@@ -156,6 +156,10 @@ export const SideProjectWrapper = styled.div`
 
   box-shadow: 0px 0px 12px 0px #000;
   border-radius: 30px;
+  
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const SideProjectImage = styled.img`
