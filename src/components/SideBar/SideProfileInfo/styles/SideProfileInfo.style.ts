@@ -11,7 +11,7 @@ export const SideBar = styled.aside`
 
   background-color: #101213;
   border-radius: 16px;
-  box-shadow: 0px 0px 20px 0px rgb(137, 249, 109, 0.4);
+  box-shadow: 0px 0px 20px 0px rgba(137, 249, 109, 0.4);
 
   animation: ${fadeAndSlideToRightInAnimation} 0.8s ease-out;
   
