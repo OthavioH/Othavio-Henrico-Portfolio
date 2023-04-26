@@ -9,6 +9,8 @@ export const AppMain = styled.main`
 
   @media (max-width: 768px) {
     flex-direction: column;
+    padding: 16px;
+    align-items: center;
   }
 `;
 
@@ -33,6 +35,7 @@ export const SectionsContainer = styled.div`
   
   @media (max-width: 768px) {
     width: 100%;
+    margin-left: 0;
   }
 `;
 

@@ -18,6 +18,10 @@ export const SectionWrapper = styled.div`
     animation: ${underlineTextAnimation} 0.5s ease-in-out forwards;
   }
   gap: 20px;
+
+  @media (max-width: 768px) {
+    width: 100%;  
+  }
 `;
 
 export const WorkListWrapper = styled.div`
@@ -29,6 +33,11 @@ export const WorkListWrapper = styled.div`
   flex-wrap: wrap;
 
   gap: 16px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content:center;
+  }
 `;
 
 export const ExpeciencesArticle = styled(SectionArticle)`
@@ -37,6 +46,7 @@ export const ExpeciencesArticle = styled(SectionArticle)`
 
 export const WorkExperienceItem = styled.div`
   min-width: 290px;
+  width: auto;
   height: fit-content;
   padding: 10px 22px;
 
@@ -44,7 +54,7 @@ export const WorkExperienceItem = styled.div`
   flex-direction: column;
   align-items: center;
 
-  box-shadow: 0px 0px 12px 0px #000;
+  box-shadow: 0px 0px 12px 0px rgba(137, 249, 109, 0.4);
   border-radius: 16px;
 
   &.expanded {
@@ -52,7 +62,19 @@ export const WorkExperienceItem = styled.div`
   }
 
   &.collapsed {
-    animation: ${decreaseWidthAnimation} 0.5s ease-in-out forwards;
+    animation: ${decreaseWidthAnimation} 0.5s ease-in-out;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+
+    &.expanded {
+      animation: none;
+    }
+
+    &.collapsed {
+      animation: none;
+    }
   }
 `;
 
@@ -142,6 +164,10 @@ export const SideProjectsList = styled.div`
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 16px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 `;
 
 export const SideProjectWrapper = styled.div`
@@ -154,7 +180,7 @@ export const SideProjectWrapper = styled.div`
   align-items: center;
   justify-content: flex-start;
 
-  box-shadow: 0px 0px 12px 0px #000;
+  box-shadow: 0px 0px 12px 0px rgba(137, 249, 109, 0.4);
   border-radius: 30px;
 `;
 
