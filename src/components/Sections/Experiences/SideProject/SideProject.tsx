@@ -1,8 +1,10 @@
-import { Stack } from "../../../../shared/models/Stack";
+import { Stack } from "../../../../shared/types/Stack";
 import stackToIcon from "../../../../shared/utils/stackToIcon";
 import {
   SideProjectDate,
   SideProjectImage,
+  SideProjectImageFilter,
+  SideProjectImageWrapper,
   SideProjectStackList,
   SideProjectTitle,
   SideProjectWrapper,
@@ -24,7 +26,10 @@ export default function SideProject({
 }: SideProjectProps) {
   return (
     <SideProjectWrapper>
-      <SideProjectImage src={thumbnailURL} />
+      <SideProjectImageWrapper>
+        <SideProjectImageFilter />
+        <SideProjectImage src={thumbnailURL} />
+      </SideProjectImageWrapper>
       <SideProjectTitle>{projectName}</SideProjectTitle>
       <SideProjectDate>{projectDate}</SideProjectDate>
       <SideProjectStackList>

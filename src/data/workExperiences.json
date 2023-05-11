@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "companyName": "Tokenlab Tecnologia da Informação LTDA.",
+    "role": "Web Developer",
+    "workingPeriod": "May/2021 - Feb/2023",
+    "description": "At Tokenlab, I helped develop some projects using Flutter Web, Angular, Node.js, HTML, CSS, SASS, DDD (Domain Driver Design), Docker, BLoC, and Responsive Designs. I also used Jira extensively for team management, as well as Figma, Bitbucket, and utilized SCRUM and Kanban.\n\nProjects Completed:\n\nCinemark ATM - Self-service machine for the Cinemark cinema chain. The project was developed in Flutter Web, where I learned a lot about the technology, its widgets, design patterns that improve development, and enhanced my collaborative professional skills. - Aug/2021 - May/2022.\n\nMyPromo - Website and application that aims to assist consumers with their supermarket shopping. 2022 - November 2022.\n\nTokenlab Website Maintenance. 2022 - 2023.",
+    "skillList": [
+      "NodeJS",
+      "Typescript",
+      "Angular",
+      "Flutter",
+      "Docker",
+      "DDD",
+      "BLoC",
+      "SCRUM",
+      "Kanban",
+      "Jira",
+      "Bitbucket",
+      "Figma",
+      "HTML",
+      "CSS",
+      "SASS",
+      "Responsive Designs",
+      "Flutter Web",
+      "Team Collaboration"
+    ]
+  },
+  {
+    "id": 2,
+    "companyName": "IFMATH",
+    "role": "FullStack Developer",
+    "workingPeriod": "Feb/2020 - Apr/2021",
+    "description": "Helping in the development of the IFMATH website, which is a software focused at teaching math. The website was made with Angular, Java Spring Boot, Git, CSS, SASS, HTML, TDD concept, and responsive designs.",
+    "skillList": [
+      "TDD",
+      "Java Spring Boot",
+      "Angular",
+      "TypeScript",
+      "Team Collaboration",
+      "Git",
+      "SASS",
+      "Responsive Design",
+      "HTML"
+    ]
+  }
+]

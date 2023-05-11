@@ -1,9 +1,7 @@
 import styled from "styled-components";
 import { SectionArticle } from "../../../styles/App.style";
 import {
-  decreaseWidthAnimation,
-  fadeAndSlideToLeftInAnimation,
-  increaseWidthAnimation,
+  fadeAndSlideUpInAnimation,
   inverseUpsideDownAnimation,
   underlineTextAnimation,
   upsideDownAnimation,
@@ -20,7 +18,7 @@ export const SectionWrapper = styled.div`
   gap: 20px;
 
   @media (max-width: 768px) {
-    width: 100%;  
+    width: 100%;
   }
 `;
 
@@ -36,51 +34,31 @@ export const WorkListWrapper = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
   }
 `;
 
 export const ExpeciencesArticle = styled(SectionArticle)`
-  animation: ${fadeAndSlideToLeftInAnimation} 2.5s ease-in-out;
+  animation: ${fadeAndSlideUpInAnimation} 2.5s ease-in-out;
 `;
 
 export const WorkExperienceItem = styled.div`
-  min-width: 290px;
-  width: auto;
+  width: 100%;
   height: fit-content;
-  padding: 10px 22px;
+  padding: 2px 22px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  box-shadow: 0px 0px 12px 0px rgba(137, 249, 109, 0.4);
+  box-shadow: 0px 0px 8px 0px rgba(137, 249, 109, 0.4);
   border-radius: 16px;
-
-  &.expanded {
-    animation: ${increaseWidthAnimation} 0.5s ease-in-out forwards;
-  }
-
-  &.collapsed {
-    animation: ${decreaseWidthAnimation} 0.5s ease-in-out;
-  }
-
-  @media (max-width: 768px) {
-    width: 100%;
-
-    &.expanded {
-      animation: none;
-    }
-
-    &.collapsed {
-      animation: none;
-    }
-  }
 `;
 
-export const WorkExperienceHeader = styled.div`
+export const WorkExperienceHeaderWrapper = styled.div`
   width: 100%;
-  height: 100px;
+  height: auto;
+  padding: 12px 0px;
 
   display: flex;
   flex-direction: row;
@@ -95,6 +73,28 @@ export const WorkExperienceHeader = styled.div`
   &.collapsed {
     border-bottom-color: transparent;
   }
+`;
+
+export const WorkExperienceInfo = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+`;
+
+export const WorkExperienceCompanyName = styled.p`
+  width: fit-content;
+  font-size: 18px;
+  font-weight: bold;
+`;
+
+export const WorkExperienceCompanyRole = styled.p`
+  font-size: 16px;
+`;
+
+export const WorkExperienceCompanyDate = styled.p`
+  font-size: 16px;
 `;
 
 export const WorkExperienceDescription = styled.div`
@@ -115,28 +115,6 @@ export const WorkExperienceDescription = styled.div`
   }
 `;
 
-export const WorkExperienceInfo = styled.div`
-  width: fit-content;
-  max-width: 320px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 2px;
-`;
-
-export const WorkExperienceCompanyName = styled.p`
-  font-size: 22px;
-  font-weight: bold;
-`;
-
-export const WorkExperienceCompanyRole = styled.p`
-  font-size: 18px;
-`;
-
-export const WorkExperienceCompanyDate = styled.p`
-  font-size: 16px;
-`;
-
 export const ArrowDownIcon = styled.img`
   width: 50px;
   height: 50px;
@@ -151,6 +129,7 @@ export const ArrowDownIcon = styled.img`
 `;
 
 export const IconButton = styled.button`
+  height: 100%;
   background: none;
   border: none;
   cursor: pointer;
@@ -163,11 +142,23 @@ export const SideProjectsList = styled.div`
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 22px;
 
   @media (max-width: 768px) {
     justify-content: center;
   }
+`;
+
+export const SideProjectImageFilter = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: saturate(0%);
+  z-index: 9999;
+  border-radius: 16px 16px 0px 0px;
 `;
 
 export const SideProjectWrapper = styled.div`
@@ -180,13 +171,30 @@ export const SideProjectWrapper = styled.div`
   align-items: center;
   justify-content: flex-start;
 
-  box-shadow: 0px 0px 12px 0px rgba(137, 249, 109, 0.4);
+  box-shadow: 0px 0px 8px 0px rgba(137, 249, 109, 0.4);
   border-radius: 30px;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(90%);
+  }
+
+  &:hover ${SideProjectImageFilter} {
+    backdrop-filter: saturate(100%);
+  }
 `;
 
 export const SideProjectImage = styled.img`
   width: 100%;
   min-height: 120px;
+  border-radius: 16px 16px 0px 0px;
+`;
+
+export const SideProjectImageWrapper = styled.div`
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  z-index: 9999;
   border-radius: 16px 16px 0px 0px;
 `;
 
