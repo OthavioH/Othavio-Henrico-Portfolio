@@ -4,7 +4,7 @@ import tsIcon from "../../assets/typescript_icon.png";
 import flutterIcon from "../../assets/flutter_icon.png";
 import javaIcon from "../../assets/java_icon.png";
 import angularIcon from "../../assets/angular_icon.png";
-import { Stack } from "../models/Stack";
+import { Stack } from "../types/Stack";
 
 export default function stackToIcon(stack: Stack): any {
   switch (stack) {

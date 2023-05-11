@@ -1,17 +1,8 @@
-import {
-  ArrowDownIcon,
-  IconButton,
-  WorkExperienceCompanyDate,
-  WorkExperienceCompanyName,
-  WorkExperienceCompanyRole,
-  WorkExperienceInfo,
-  WorkExperienceHeader,
-  WorkExperienceItem,
-} from "../Experiences.style";
+import { WorkExperienceItem } from "../Experiences.style";
 
-import arrowDownIcon from "../../../../assets/arrow down_icon.png";
 import { useState } from "react";
 import WorkExperienceContent from "./WorkExperienceContent/WorkExperienceContent";
+import WorkExperienceHeader from "./WorkExperienceHeader/WorkExperienceHeader";
 
 interface WorkExperienceProps {
   companyName: string;
@@ -32,23 +23,13 @@ export default function WorkExperience({
 
   return (
     <WorkExperienceItem className={isExpanded ? "expanded" : "collapsed"}>
-      <WorkExperienceHeader className={isExpanded ? "expanded" : "collapsed"}>
-        <WorkExperienceInfo>
-          <WorkExperienceCompanyName>{companyName}</WorkExperienceCompanyName>
-          <WorkExperienceCompanyRole>{companyRole}</WorkExperienceCompanyRole>
-          <WorkExperienceCompanyDate>{workingPeriod}</WorkExperienceCompanyDate>
-        </WorkExperienceInfo>
-        <IconButton
-          onClick={() => {
-            setIsExpanded(!isExpanded);
-          }}
-        >
-          <ArrowDownIcon
-            src={arrowDownIcon}
-            className={isExpanded ? "expanded" : "collapsed"}
-          />
-        </IconButton>
-      </WorkExperienceHeader>
+      <WorkExperienceHeader
+        companyName={companyName}
+        companyRole={companyRole}
+        workingPeriod={workingPeriod}
+        isExpanded={isExpanded}
+        setIsExpanded={() => setIsExpanded(!isExpanded)}
+      />
       {isExpanded && (
         <WorkExperienceContent
           description={description}

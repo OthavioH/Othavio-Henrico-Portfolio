@@ -1,9 +1,7 @@
 import styled from "styled-components";
 import { SectionArticle } from "../../../styles/App.style";
 import {
-  decreaseWidthAnimation,
   fadeAndSlideUpInAnimation,
-  increaseWidthAnimation,
   inverseUpsideDownAnimation,
   underlineTextAnimation,
   upsideDownAnimation,
@@ -45,8 +43,7 @@ export const ExpeciencesArticle = styled(SectionArticle)`
 `;
 
 export const WorkExperienceItem = styled.div`
-  min-width: 290px;
-  width: auto;
+  width: 100%;
   height: fit-content;
   padding: 2px 22px;
 
@@ -56,31 +53,12 @@ export const WorkExperienceItem = styled.div`
 
   box-shadow: 0px 0px 8px 0px rgba(137, 249, 109, 0.4);
   border-radius: 16px;
-
-  &.expanded {
-    animation: ${increaseWidthAnimation} 1s ease-in-out forwards;
-  }
-
-  &.collapsed {
-    animation: ${decreaseWidthAnimation} 1s ease-in-out;
-  }
-
-  @media (max-width: 768px) {
-    width: 100%;
-
-    &.expanded {
-      animation: none;
-    }
-
-    &.collapsed {
-      animation: none;
-    }
-  }
 `;
 
-export const WorkExperienceHeader = styled.div`
+export const WorkExperienceHeaderWrapper = styled.div`
   width: 100%;
-  height: 100px;
+  height: auto;
+  padding: 12px 0px;
 
   display: flex;
   flex-direction: row;
@@ -95,6 +73,28 @@ export const WorkExperienceHeader = styled.div`
   &.collapsed {
     border-bottom-color: transparent;
   }
+`;
+
+export const WorkExperienceInfo = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+`;
+
+export const WorkExperienceCompanyName = styled.p`
+  width: fit-content;
+  font-size: 18px;
+  font-weight: bold;
+`;
+
+export const WorkExperienceCompanyRole = styled.p`
+  font-size: 16px;
+`;
+
+export const WorkExperienceCompanyDate = styled.p`
+  font-size: 16px;
 `;
 
 export const WorkExperienceDescription = styled.div`
@@ -115,28 +115,6 @@ export const WorkExperienceDescription = styled.div`
   }
 `;
 
-export const WorkExperienceInfo = styled.div`
-  width: fit-content;
-  max-width: 320px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 2px;
-`;
-
-export const WorkExperienceCompanyName = styled.p`
-  font-size: 22px;
-  font-weight: bold;
-`;
-
-export const WorkExperienceCompanyRole = styled.p`
-  font-size: 18px;
-`;
-
-export const WorkExperienceCompanyDate = styled.p`
-  font-size: 16px;
-`;
-
 export const ArrowDownIcon = styled.img`
   width: 50px;
   height: 50px;
@@ -151,6 +129,7 @@ export const ArrowDownIcon = styled.img`
 `;
 
 export const IconButton = styled.button`
+  height: 100%;
   background: none;
   border: none;
   cursor: pointer;

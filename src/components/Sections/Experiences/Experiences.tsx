@@ -1,4 +1,5 @@
-import { Stack } from "../../../shared/models/Stack";
+import { useEffect, useState } from "react";
+import { Stack } from "../../../shared/types/Stack";
 import { SectionTitle } from "../../../styles/App.style";
 import SectionSubtitle from "../SectionSubtitle/SectionSubtitle";
 import {
@@ -7,66 +8,36 @@ import {
   WorkListWrapper,
   SectionWrapper,
 } from "./Experiences.style";
+
 import SideProject from "./SideProject/SideProject";
 import WorkExperience from "./WorkExperience/WorkExperience";
+import { IWorkExperience } from "../../../shared/types/WorkExperience";
+
+import workExperiencesJSON from "../../../data/workExperiences.json";
 
 export default function Experiences() {
+  const [worksList, setWorksList] = useState<IWorkExperience[]>([]);
+
+  useEffect(() => {
+    setWorksList([...workExperiencesJSON]);
+  }, []);
+
   return (
     <ExpeciencesArticle>
       <SectionTitle>Experiences</SectionTitle>
       <SectionWrapper>
-        <SectionSubtitle subtitle="Works" />
+        <SectionSubtitle subtitle="Professionals" />
         <WorkListWrapper>
-          <WorkExperience
-            companyName="Tokenlab"
-            companyRole="Web Developer"
-            workingPeriod="May/2021 - Feb/2023"
-            description="At Tokenlab, I helped develop some projects using Flutter Web, Angular, Node.js, HTML, CSS, SASS, DDD (Domain Driver Design), Docker, BLoC, and Responsive Designs. I also used Jira extensively for team management, as well as Figma, Bitbucket, and utilized SCRUM and Kanban.
-
-Projects Completed:
-
-Cinemark ATM - Self-service machine for the Cinemark cinema chain. The project was developed in Flutter Web, where I learned a lot about the technology, its widgets, design patterns that improve development, and enhanced my collaborative professional skills. - Aug/2021 - May/2022.
-
-MyPromo - Website and application that aims to assist consumers with their supermarket shopping. 2022 - November 2022.
-
-Tokenlab Website Maintenance. 2022 - 2023."
-            skillList={[
-              "NodeJS",
-              "Typescript",
-              "Angular",
-              "Flutter",
-              "Docker",
-              "DDD",
-              "BLoC",
-              "SCRUM",
-              "Kanban",
-              "Jira",
-              "Bitbucket",
-              "Figma",
-              "HTML",
-              "CSS",
-              "SASS",
-              "Responsive Designs",
-              "Flutter Web",
-              "Team Collaboration",
-            ]}
-          />
-          <WorkExperience
-            companyName="IFMATH"
-            companyRole="FullStack Developer"
-            workingPeriod="Feb/2020 - Apr/2021"
-            description="Helping in the development of the IFMATH website, which is a software aimed at teaching mathematics. The development was done using Angular, Java Spring Boot, Git, CSS, SASS, HTML, and responsive designs."
-            skillList={[
-              "TDD",
-              "Java Spring Boot",
-              "Angular",
-              "TypeScript",
-              "Team Collaboration",
-              "Git",
-              "SASS",
-              "HTML",
-            ]}
-          />
+          {worksList.map((work) => (
+            <WorkExperience
+              key={work.companyName}
+              companyName={work.companyName}
+              companyRole={work.role}
+              workingPeriod={work.workingPeriod}
+              description={work.description}
+              skillList={work.skillList}
+            />
+          ))}
         </WorkListWrapper>
       </SectionWrapper>
       <SectionWrapper>

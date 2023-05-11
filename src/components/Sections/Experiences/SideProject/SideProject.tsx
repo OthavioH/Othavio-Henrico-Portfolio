@@ -1,4 +1,4 @@
-import { Stack } from "../../../../shared/models/Stack";
+import { Stack } from "../../../../shared/types/Stack";
 import stackToIcon from "../../../../shared/utils/stackToIcon";
 import {
   SideProjectDate,
