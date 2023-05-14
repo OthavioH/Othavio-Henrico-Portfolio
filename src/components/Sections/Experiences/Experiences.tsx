@@ -26,7 +26,7 @@ export default function Experiences() {
     <ExpeciencesArticle>
       <SectionTitle>Experiences</SectionTitle>
       <SectionWrapper>
-        <SectionSubtitle subtitle="Professionals" />
+        <SectionSubtitle subtitle="Career Highlights" />
         <WorkListWrapper>
           {worksList.map((work) => (
             <WorkExperience
@@ -41,7 +41,7 @@ export default function Experiences() {
         </WorkListWrapper>
       </SectionWrapper>
       <SectionWrapper>
-        <SectionSubtitle subtitle="Side Projects" />
+        <SectionSubtitle subtitle="Personal Projects" />
         <SideProjectsList>
           <SideProject
             projectName="RPG Sheet System"
@@ -54,6 +54,12 @@ export default function Experiences() {
             projectDate="2023"
             thumbnailURL="https://user-images.githubusercontent.com/46772924/227333692-31cb77ba-d153-4db8-9bce-afe85f59c523.png"
             stacks={[Stack.REACT, Stack.TYPESCRIPT, Stack.NODE]}
+          />
+          <SideProject
+            projectName="Bot HLTV"
+            projectDate="2020"
+            thumbnailURL="https://github.com/OthavioH/Marvel-Comics-Ecommerce/assets/46772924/e6f81c7e-2ba9-4612-a51b-f24877746793"
+            stacks={[Stack.TYPESCRIPT, Stack.NODE]}
           />
         </SideProjectsList>
       </SectionWrapper>
