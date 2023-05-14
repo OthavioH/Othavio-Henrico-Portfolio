@@ -27,7 +27,7 @@ export default function SideProject({
   stacks,
 }: SideProjectProps) {
   return (
-    <a href={websiteURL} style={{ textDecoration: "none" }}>
+    <a href={websiteURL} style={{ textDecoration: "none" }} target="_blank">
       <SideProjectWrapper>
         <SideProjectImageWrapper>
           <SideProjectImageFilter />
