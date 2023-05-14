@@ -33,6 +33,7 @@ export const SideBarHeaderWrapper = styled.div`
   border-radius: 16px;
   box-shadow: 0px 0px 10px rgba(198, 198, 198, 0.3);
   padding: 12px 20px;
+  border: 2px solid rgba(137, 249, 109, 0.6);
 
   @media (max-width: 768px) {
     animation: ${sideBarHeaderAnimationMobile} 1s ease-out;
@@ -49,6 +50,8 @@ export const SideBarBio = styled.div`
   box-shadow: 0px 0px 10px rgba(198, 198, 198, 0.3);
   margin-top: 6px;
   padding: 12px 20px;
+
+  border: 2px solid rgba(137, 249, 109, 0.6);
 
   animation: ${sideBarBioAnimation} 3s ease-out;
 
