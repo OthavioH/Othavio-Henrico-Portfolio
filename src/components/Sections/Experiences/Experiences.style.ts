@@ -51,7 +51,7 @@ export const WorkExperienceItem = styled.div`
   flex-direction: column;
   align-items: center;
 
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 10px 0px rgba(198, 198, 198, 0.3);
   border: 2px solid rgba(137, 249, 109, 0.6);
   border-radius: 16px;
 `;
@@ -172,7 +172,7 @@ export const SideProjectWrapper = styled.div`
   align-items: center;
   justify-content: flex-start;
 
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 10px 0px rgba(198, 198, 198, 0.3);
   border: 2px solid rgba(137, 249, 109, 0.6);
   border-radius: 16px;
 

@@ -5,7 +5,7 @@ import { fadeAndSlideToLeftInAnimation } from "../../../../styles/Animations.sty
 export const TextWrapper = styled.div`
   width: 100%;
   padding: 22px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 10px 0px rgba(198, 198, 198, 0.5);
   border: 2px solid rgba(137, 249, 109, 0.6);
   border-radius: 16px;
 `;
