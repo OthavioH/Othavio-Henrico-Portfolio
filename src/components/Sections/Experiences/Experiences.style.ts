@@ -51,7 +51,8 @@ export const WorkExperienceItem = styled.div`
   flex-direction: column;
   align-items: center;
 
-  box-shadow: 0px 0px 8px 0px rgba(137, 249, 109, 0.4);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+  border: 2px solid rgba(137, 249, 109, 0.6);
   border-radius: 16px;
 `;
 
@@ -171,8 +172,9 @@ export const SideProjectWrapper = styled.div`
   align-items: center;
   justify-content: flex-start;
 
-  box-shadow: 0px 0px 8px 0px rgba(137, 249, 109, 0.4);
-  border-radius: 30px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+  border: 2px solid rgba(137, 249, 109, 0.6);
+  border-radius: 16px;
 
   &:hover {
     cursor: pointer;
@@ -186,15 +188,17 @@ export const SideProjectWrapper = styled.div`
 
 export const SideProjectImage = styled.img`
   width: 100%;
-  min-height: 120px;
+  height: 120px;
   border-radius: 16px 16px 0px 0px;
+
+  overflow: hidden;
 `;
 
 export const SideProjectImageWrapper = styled.div`
   position: relative;
   width: 100%;
   height: fit-content;
-  z-index: 9999;
+  z-index: 0;
   border-radius: 16px 16px 0px 0px;
 `;
 
@@ -203,6 +207,7 @@ export const SideProjectTitle = styled.p`
   font-size: 18px;
   font-weight: bold;
   word-break: keep-all;
+  text-decoration: none;
 
   text-align: center;
   padding: 10px 0px 5px;
@@ -214,6 +219,7 @@ export const SideProjectDate = styled.p`
   font-weight: bold;
   text-align: center;
   padding: 4px 5px;
+  text-decoration: none;
 `;
 
 export const SideProjectStackList = styled.div`

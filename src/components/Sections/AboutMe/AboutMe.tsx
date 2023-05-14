@@ -8,7 +8,7 @@ import {
 export default function AboutMe() {
   return (
     <AboutMeArticle>
-      <SectionTitle>About Me</SectionTitle>
+      <SectionTitle>Biography</SectionTitle>
       <TextWrapper>
         <AboutMeText>
           <p>

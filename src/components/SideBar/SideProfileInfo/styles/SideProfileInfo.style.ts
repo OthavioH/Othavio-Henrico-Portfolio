@@ -1,5 +1,9 @@
 import styled from "styled-components";
-import { fadeAndSlideToRightInAnimation } from "../../../../styles/Animations.style";
+import {
+  sideBarBioAnimation,
+  sideBarHeaderAnimation,
+  sideBarHeaderAnimationMobile,
+} from "../../../../styles/Animations.style";
 
 export const SideBar = styled.aside`
   width: fit-content;
@@ -7,16 +11,63 @@ export const SideBar = styled.aside`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 20px;
+  gap: 10px;
+  margin: 80px 0 0 0;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin: 10px 0;
+  }
+`;
+
+export const SideBarHeaderWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  animation: ${sideBarHeaderAnimation} 1.55s ease-out;
 
   background-color: #101213;
   border-radius: 16px;
-  box-shadow: 0px 0px 8px 0px rgba(137, 249, 109, 0.4);
-
-  animation: ${fadeAndSlideToRightInAnimation} 0.8s ease-out;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+  padding: 12px 20px;
 
   @media (max-width: 768px) {
-    margin-bottom: 20px;
+    animation: ${sideBarHeaderAnimationMobile} 1s ease-out;
+  }
+`;
+
+export const SideBarBio = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  background-color: #101213;
+  border-radius: 16px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+  margin-top: 6px;
+  padding: 12px 20px;
+
+  animation: ${sideBarBioAnimation} 3s ease-out;
+
+  @media (max-width: 768px) {
+    animation: ${sideBarBioAnimation} 1.6s ease-out;
+  }
+`;
+
+export const SideBarStacksList = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+
+  @media (max-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
   }
 `;
 
@@ -44,6 +95,10 @@ export const ProfileName = styled.p`
   font-size: 30px;
   font-weight: 700;
   padding-top: 20px;
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 `;
 
 export const Role = styled.p`
@@ -51,15 +106,19 @@ export const Role = styled.p`
   font-size: 20px;
   font-weight: bold;
   text-align: start;
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 `;
 
 export const DivisionTitle = styled.p`
   width: 100%;
   font-size: 20px;
-
   font-weight: bold;
   text-align: center;
-  padding-top: 36px;
+  text-decoration: 3px underline rgba(0, 0, 0, 0.1);
+  text-underline-position: under;
 `;
 
 export const LinksWrapper = styled.div`
@@ -70,4 +129,9 @@ export const LinksWrapper = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   padding-top: 20px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    gap: 20px;
+  }
 `;
