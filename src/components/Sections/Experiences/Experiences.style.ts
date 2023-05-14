@@ -207,6 +207,7 @@ export const SideProjectTitle = styled.p`
   font-size: 18px;
   font-weight: bold;
   word-break: keep-all;
+  text-decoration: none;
 
   text-align: center;
   padding: 10px 0px 5px;
@@ -218,6 +219,7 @@ export const SideProjectDate = styled.p`
   font-weight: bold;
   text-align: center;
   padding: 4px 5px;
+  text-decoration: none;
 `;
 
 export const SideProjectStackList = styled.div`
