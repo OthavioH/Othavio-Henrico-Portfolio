@@ -80,3 +80,42 @@ export const inverseUpsideDownAnimation = keyframes`
         transform: rotate(0deg);
     }
 `;
+
+export const sideBarHeaderAnimation = keyframes`
+  0% {
+    transform: scale(0.05) translateX(400%);
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateX(0%);
+    opacity: 1;
+  }
+`;
+
+export const sideBarHeaderAnimationMobile = keyframes`
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+`;
+
+export const sideBarBioAnimation = keyframes`
+  0% {
+    transform: translateY(-25%);
+    opacity: 0; 
+  }
+  50%{
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+`;

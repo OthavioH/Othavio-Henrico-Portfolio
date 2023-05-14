@@ -26,7 +26,7 @@ export default function Experiences() {
     <ExpeciencesArticle>
       <SectionTitle>Experiences</SectionTitle>
       <SectionWrapper>
-        <SectionSubtitle subtitle="Career Highlights" />
+        <SectionSubtitle subtitle="Career" />
         <WorkListWrapper>
           {worksList.map((work) => (
             <WorkExperience

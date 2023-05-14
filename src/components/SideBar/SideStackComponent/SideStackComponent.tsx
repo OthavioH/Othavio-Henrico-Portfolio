@@ -18,7 +18,7 @@ export default function SideStackComponent({
 }
 
 const StackComponent = styled.div`
-  width: 100%;
+  width: fit-content;
   display: flex;
   flex-direction: row;
   align-items: center;
