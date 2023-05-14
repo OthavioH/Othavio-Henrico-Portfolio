@@ -31,7 +31,7 @@ export const SideBarHeaderWrapper = styled.div`
 
   background-color: #101213;
   border-radius: 16px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 10px rgba(198, 198, 198, 0.6);
   padding: 12px 20px;
 
   @media (max-width: 768px) {
@@ -46,7 +46,7 @@ export const SideBarBio = styled.div`
 
   background-color: #101213;
   border-radius: 16px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 10px rgba(198, 198, 198, 0.6);
   margin-top: 6px;
   padding: 12px 20px;
 
