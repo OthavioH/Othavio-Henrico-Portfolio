@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { SectionArticle } from "../../../styles/App.style";
 import {
-  fadeAndSlideUpInAnimation,
+  fadeAndSlideUpAnimation,
   inverseUpsideDownAnimation,
   underlineTextAnimation,
   upsideDownAnimation,
@@ -39,7 +39,7 @@ export const WorkListWrapper = styled.div`
 `;
 
 export const ExpeciencesArticle = styled(SectionArticle)`
-  animation: ${fadeAndSlideUpInAnimation} 2.5s ease-in-out;
+  animation: ${fadeAndSlideUpAnimation} 2.5s ease-in-out;
 `;
 
 export const WorkExperienceItem = styled.div`

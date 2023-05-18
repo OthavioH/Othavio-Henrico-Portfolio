@@ -34,10 +34,23 @@ export const fadeAndSlideToLeftInAnimation = keyframes`
   }
 `;
 
-export const fadeAndSlideUpInAnimation = keyframes`
+export const fadeAndSlideUpAnimation = keyframes`
   from {
     display: none;
     transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    display: flex;
+    transform: translateX(0%);
+    opacity: 1;
+  }
+`;
+
+export const fadeAndSlideDownAnimation = keyframes`
+  from {
+    display: none;
+    transform: translateY(-100%);
     opacity: 0;
   }
   to {

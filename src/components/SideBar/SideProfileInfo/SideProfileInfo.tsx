@@ -1,6 +1,7 @@
 import SideStackComponent from "../SideStackComponent/SideStackComponent";
 import SocialLinks from "../SocialLinks/SocialLinkts";
 import SideBarHeader from "./SideBarHeader/SideBarHeader";
+// import { useDispatch } from "react-redux";
 import { FormattedMessage } from "react-intl";
 import {
   LinksWrapper,
@@ -8,11 +9,26 @@ import {
   SideBar,
   SideBarBio,
   SideBarStacksList,
+  // LanguageWrapper,
+  // SwitchLanguageSelect,
 } from "./styles/SideProfileInfo.style";
+// import { Language, changeLanguage } from "../../../redux/slices/languageSlice";
 
 export default function SideProfileInfo() {
+  // const dispatch = useDispatch();
+
   return (
     <SideBar>
+      {/* <LanguageWrapper>
+        <SwitchLanguageSelect
+          onChange={(e) => {
+            dispatch(changeLanguage(e.target.value as Language));
+          }}
+        >
+          <option value="pt-br">PT-BR</option>
+          <option value="en">EN</option>
+        </SwitchLanguageSelect>
+      </LanguageWrapper> */}
       <SideBarHeader />
       <SideBarBio>
         <DivisionTitle>Stacks</DivisionTitle>
