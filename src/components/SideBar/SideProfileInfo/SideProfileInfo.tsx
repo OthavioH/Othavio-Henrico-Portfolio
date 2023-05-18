@@ -1,7 +1,7 @@
 import SideStackComponent from "../SideStackComponent/SideStackComponent";
 import SocialLinks from "../SocialLinks/SocialLinkts";
 import SideBarHeader from "./SideBarHeader/SideBarHeader";
-import { useDispatch } from "react-redux";
+// import { useDispatch } from "react-redux";
 import { FormattedMessage } from "react-intl";
 import {
   LinksWrapper,
@@ -9,13 +9,13 @@ import {
   SideBar,
   SideBarBio,
   SideBarStacksList,
-  LanguageWrapper,
-  SwitchLanguageSelect,
+  // LanguageWrapper,
+  // SwitchLanguageSelect,
 } from "./styles/SideProfileInfo.style";
-import { Language, changeLanguage } from "../../../redux/slices/languageSlice";
+// import { Language, changeLanguage } from "../../../redux/slices/languageSlice";
 
 export default function SideProfileInfo() {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   return (
     <SideBar>
