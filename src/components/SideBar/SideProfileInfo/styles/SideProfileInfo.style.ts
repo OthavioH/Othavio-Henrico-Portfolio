@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {
+  fadeAndSlideDownAnimation,
   sideBarBioAnimation,
   sideBarHeaderAnimation,
   sideBarHeaderAnimationMobile,
@@ -137,4 +138,28 @@ export const LinksWrapper = styled.div`
     justify-content: center;
     gap: 20px;
   }
+`;
+
+export const LanguageWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const SwitchLanguageSelect = styled.select`
+  width: fit-content;
+  height: 30px;
+  border-radius: 8px;
+  background-color: #101213;
+  color: #fff;
+  border: 2px solid rgba(137, 249, 109, 0.6);
+  padding: 0 10px;
+
+  &:focus {
+    outline: none;
+  }
+
+  animation: ${fadeAndSlideDownAnimation} 2.5s ease-in;
 `;
