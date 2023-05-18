@@ -15,7 +15,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        background: radial-gradient(at bottom right, #89f96d, #101213, #101213);
+        background: radial-gradient(at top left, #101213,#101213,#89f96d);
         min-height: 100vh;
 
         @media (max-width: 768px) {

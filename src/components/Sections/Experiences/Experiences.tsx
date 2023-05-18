@@ -13,20 +13,32 @@ import SideProject from "./SideProject/SideProject";
 import WorkExperience from "./WorkExperience/WorkExperience";
 import { IWorkExperience } from "../../../shared/types/WorkExperience";
 
-import workExperiencesJSON from "../../../data/workExperiences.json";
+import englishWorkExperiencesJSON from "../../../data/workExperiences_en_us.json";
+import portugueseWorkExperiencesJSON from "../../../data/workExperiences_pt_br.json";
+import { FormattedMessage } from "react-intl";
+import { locale, messages } from "../../../main";
 
 export default function Experiences() {
   const [worksList, setWorksList] = useState<IWorkExperience[]>([]);
 
   useEffect(() => {
-    setWorksList([...workExperiencesJSON]);
+    setWorksList([
+      ...(locale === "pt-BR"
+        ? portugueseWorkExperiencesJSON
+        : englishWorkExperiencesJSON),
+    ]);
   }, []);
 
   return (
     <ExpeciencesArticle>
-      <SectionTitle>Experiences</SectionTitle>
+      <SectionTitle>
+        <FormattedMessage
+          description="Experiences Title"
+          id="main.experiences.title"
+        />
+      </SectionTitle>
       <SectionWrapper>
-        <SectionSubtitle subtitle="Career" />
+        <SectionSubtitle subtitle={messages["main.experiences.career.title"]} />
         <WorkListWrapper>
           {worksList.map((work) => (
             <WorkExperience
@@ -41,7 +53,9 @@ export default function Experiences() {
         </WorkListWrapper>
       </SectionWrapper>
       <SectionWrapper>
-        <SectionSubtitle subtitle="Personal Projects" />
+        <SectionSubtitle
+          subtitle={messages["main.experiences.personalProjects.title"]}
+        />
         <SideProjectsList>
           <SideProject
             projectName="RPG Sheet System"

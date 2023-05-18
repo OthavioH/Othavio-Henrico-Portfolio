@@ -15,6 +15,7 @@ export const AboutMeText = styled.p`
   font-size: 16px;
 
   text-align: justify;
+  white-space: pre-line;
 `;
 
 export const AboutMeArticle = styled(SectionArticle)`

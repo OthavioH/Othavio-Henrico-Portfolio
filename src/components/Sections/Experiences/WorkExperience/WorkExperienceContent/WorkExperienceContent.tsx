@@ -1,3 +1,4 @@
+import { FormattedMessage } from "react-intl";
 import {
   ExperienceContentDescription,
   ExperienceContentSubtitle,
@@ -17,9 +18,19 @@ export default function WorkExperienceContent({
 }: WorkExperienceProps) {
   return (
     <ExperienceContentWrapper>
-      <ExperienceContentSubtitle>The Experience</ExperienceContentSubtitle>
+      <ExperienceContentSubtitle>
+        <FormattedMessage
+          id="main.experiences.career.experience.title"
+          defaultMessage="The Experience"
+        />
+      </ExperienceContentSubtitle>
       <ExperienceContentDescription>{description}</ExperienceContentDescription>
-      <ExperienceContentSubtitle>Skills and Techs</ExperienceContentSubtitle>
+      <ExperienceContentSubtitle>
+        <FormattedMessage
+          id="main.experiences.career.skills.title"
+          defaultMessage="Skills And Techs"
+        />
+      </ExperienceContentSubtitle>
       <ExperienceContentSkills>
         {skillList.map((skill, index) => (
           <ExperienceContentSkill key={index}>{skill}</ExperienceContentSkill>

@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "companyName": "Tokenlab Tecnologia da Informação LTDA",
+    "role": "Web Developer",
+    "workingPeriod": "May/2021 - Feb/2023",
+    "description": "Na Tokenlab, desenvolvi alguns projetos utilizando tecnologias e conceitos como Flutter Web, Angular, HTML, CSS, SASS, DDD (Domain Driven Design), Docker, BLoC, Design Patterns e Responsive Designs. Também usei Jira extensivamente para gerenciamento de equipe, bem como Figma, Bitbucket e SCRUM e Kanban. Para melhorar meus conhecimentos, também fiz alguns treinamentos da empresa que mostraram algumas novas tecnologias como Cloud Formations e AWS, mas também treinamentos para melhorar minhas habilidades com Node.js.\n\nProjetos concluídos:\n\nCinemark ATM - Self -máquina de serviço para a rede de cinemas Cinemark. O projeto foi desenvolvido em Flutter Web, onde aprendi muito sobre a tecnologia, seus widgets, padrões de design que melhoram o desenvolvimento, e aprimorei minhas habilidades profissionais colaborativas. - Ago/2021 - Maio/2022.\n\nMyPromo - Site e aplicativo que visa auxiliar o consumidor em suas compras de supermercado. 2022 - Nov/2022.\n\nManutenção do site Tokenlab. Nov/2022 - Fev/2023.",
+    "skillList": [
+      "NodeJS",
+      "Typescript",
+      "Angular",
+      "Flutter",
+      "Docker",
+      "DDD",
+      "BLoC",
+      "SCRUM",
+      "Kanban",
+      "Jira",
+      "Bitbucket",
+      "Figma",
+      "HTML",
+      "CSS",
+      "SASS",
+      "Designs Responsivos",
+      "Flutter Web",
+      "Colaboração em Time"
+    ]
+  },
+  {
+    "id": 2,
+    "companyName": "IFMATH",
+    "role": "FullStack Developer",
+    "workingPeriod": "Fev/2020 - Abr/2021",
+    "description": "Desenvolvi parte do site do IFMATH, que é um software voltado para o ensino de matemática. O site foi feito com Angular, Java Spring Boot, Git, CSS, SASS, HTML, conceito TDD e designs responsivos.",
+    "skillList": [
+      "TDD",
+      "Java Spring Boot",
+      "Angular",
+      "TypeScript",
+      "Colaboração em Time",
+      "Git",
+      "SASS",
+      "Designs Responsivos",
+      "HTML"
+    ]
+  }
+]
