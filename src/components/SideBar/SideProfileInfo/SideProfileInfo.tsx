@@ -1,6 +1,7 @@
 import SideStackComponent from "../SideStackComponent/SideStackComponent";
 import SocialLinks from "../SocialLinks/SocialLinkts";
 import SideBarHeader from "./SideBarHeader/SideBarHeader";
+import { FormattedMessage } from "react-intl";
 import {
   LinksWrapper,
   DivisionTitle,
@@ -22,7 +23,13 @@ export default function SideProfileInfo() {
           <SideStackComponent title="Java" imgUrl="java_icon.png" />
           <SideStackComponent title="Flutter" imgUrl="flutter_icon.png" />
         </SideBarStacksList>
-        <DivisionTitle>Social Media</DivisionTitle>
+        <DivisionTitle>
+          <FormattedMessage
+            description="Social Media Title"
+            id="sidebar.socialMediaTitle"
+            defaultMessage="Social Media"
+          />
+        </DivisionTitle>
         <LinksWrapper>
           <SocialLinks
             title="LinkedIn"
