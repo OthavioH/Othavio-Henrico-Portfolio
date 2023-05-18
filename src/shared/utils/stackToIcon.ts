@@ -20,6 +20,8 @@ export default function stackToIcon(stack: Stack): any {
       return javaIcon;
     case Stack.ANGULAR:
       return angularIcon;
+    case Stack.REACT_NATIVE:
+      return reactIcon;
     default:
       break;
   }

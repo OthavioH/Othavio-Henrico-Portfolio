@@ -1,5 +1,6 @@
 import { Stack } from "../../../../shared/types/Stack";
 import stackToIcon from "../../../../shared/utils/stackToIcon";
+import ProjectFallBackImage from "../../../../assets/project_fallback_image.jpg";
 import {
   SideProjectDate,
   SideProjectImage,
@@ -14,7 +15,7 @@ import {
 interface SideProjectProps {
   projectName: string;
   projectDate: string;
-  thumbnailURL: string;
+  thumbnailURL?: string;
   websiteURL?: string;
   stacks: Stack[];
 }
@@ -31,7 +32,7 @@ export default function SideProject({
       <SideProjectWrapper>
         <SideProjectImageWrapper>
           <SideProjectImageFilter />
-          <SideProjectImage src={thumbnailURL} />
+          <SideProjectImage src={thumbnailURL ?? ProjectFallBackImage} />
         </SideProjectImageWrapper>
         <SideProjectTitle>{projectName}</SideProjectTitle>
         <SideProjectDate>{projectDate}</SideProjectDate>

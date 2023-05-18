@@ -8,7 +8,7 @@ interface SocialLinksProps {
 
 export default function SocialLinks({ title, imgUrl, url }: SocialLinksProps) {
   return (
-    <SocialLinkComponent href={url}>
+    <SocialLinkComponent href={url} target="_blank">
       <SocialLinkIcon src={imgUrl} />
       <SocialLinkTitle>{title}</SocialLinkTitle>
     </SocialLinkComponent>

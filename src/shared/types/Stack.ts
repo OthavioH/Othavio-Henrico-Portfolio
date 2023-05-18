@@ -8,4 +8,5 @@ export enum Stack {
   FLUTTER = "Flutter",
   PYTHON = "Python",
   PHP = "PHP",
+  REACT_NATIVE = "React Native",
 }

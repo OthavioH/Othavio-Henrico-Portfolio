@@ -23,10 +23,12 @@ export const decreaseWidthAnimation = keyframes`
 
 export const fadeAndSlideToLeftInAnimation = keyframes`
   from {
+    display: none;
     transform: translateX(100%);
     opacity: 0;
   }
   to {
+    display: flex;
     transform: translateX(0%);
     opacity: 1;
   }
@@ -34,10 +36,12 @@ export const fadeAndSlideToLeftInAnimation = keyframes`
 
 export const fadeAndSlideUpInAnimation = keyframes`
   from {
+    display: none;
     transform: translateY(100%);
     opacity: 0;
   }
   to {
+    display: flex;
     transform: translateX(0%);
     opacity: 1;
   }

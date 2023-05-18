@@ -15,8 +15,13 @@ const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        background: #101213;
+        background: radial-gradient(at bottom right, #89f96d, #101213, #101213);
         min-height: 100vh;
+
+        @media (max-width: 768px) {
+            background: linear-gradient(to bottom right, #101213, #101213, #89f96d);
+            background: -webkit-linear-gradient(to bottom, #101213, #101213, #89f96d);
+        }
     }
 `;
 
