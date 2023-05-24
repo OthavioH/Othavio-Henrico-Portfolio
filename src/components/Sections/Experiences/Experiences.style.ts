@@ -51,9 +51,11 @@ export const WorkExperienceItem = styled.div`
   flex-direction: column;
   align-items: center;
 
-  box-shadow: 0px 0px 10px 0px rgba(198, 198, 198, 0.3);
-  border: 2px solid rgba(137, 249, 109, 0.6);
+  border: 1px solid rgba(137, 249, 109, 0.6);
   border-radius: 16px;
+
+  background: #101213;
+  box-shadow: 0px 0px 20px #000;
 `;
 
 export const WorkExperienceHeaderWrapper = styled.div`
@@ -173,9 +175,11 @@ export const SideProjectWrapper = styled.div`
   justify-content: flex-start;
 
   background: #101213;
-  box-shadow: 0px 0px 10px 0px rgba(198, 198, 198, 0.3);
-  border: 2px solid rgba(137, 249, 109, 0.6);
+  border: 1px solid rgba(137, 249, 109, 0.5);
   border-radius: 16px;
+
+  background: #101213;
+  box-shadow: 0px 0px 10px #000;
 
   &:hover {
     cursor: pointer;
