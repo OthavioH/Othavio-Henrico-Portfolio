@@ -32,9 +32,9 @@ export const SideBarHeaderWrapper = styled.div`
 
   background-color: #101213;
   border-radius: 16px;
-  box-shadow: 0px 0px 10px rgba(198, 198, 198, 0.3);
   padding: 12px 20px;
-  border: 2px solid rgba(137, 249, 109, 0.6);
+
+  box-shadow: 0px 0px 20px #000;
 
   @media (max-width: 768px) {
     animation: ${sideBarHeaderAnimationMobile} 1s ease-out;
@@ -48,11 +48,10 @@ export const SideBarBio = styled.div`
 
   background-color: #101213;
   border-radius: 16px;
-  box-shadow: 0px 0px 10px rgba(198, 198, 198, 0.3);
   margin-top: 6px;
   padding: 12px 20px;
 
-  border: 2px solid rgba(137, 249, 109, 0.6);
+  box-shadow: 0px 0px 20px #000;
 
   animation: ${sideBarBioAnimation} 3s ease-out;
 
@@ -121,7 +120,7 @@ export const DivisionTitle = styled.p`
   font-size: 20px;
   font-weight: bold;
   text-align: center;
-  text-decoration: 3px underline rgba(0, 0, 0, 0.1);
+  text-decoration: 3px underline rgba(255, 255, 255, 0.2);
   text-underline-position: under;
 `;
 
