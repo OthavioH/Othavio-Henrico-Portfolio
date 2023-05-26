@@ -92,6 +92,12 @@ export default function Experiences() {
             stacks={[Stack.REACT, Stack.TYPESCRIPT]}
           />
           <SideProject
+            projectName="Habit Tracker"
+            projectDate="2023"
+            websiteURL="https://github.com/OthavioH/NLW-Habit-Tracker-Mobile"
+            stacks={[Stack.REACT_NATIVE, Stack.NODE, Stack.TYPESCRIPT]}
+          />
+          <SideProject
             projectName="Nature Care"
             projectDate="2021"
             websiteURL="https://github.com/OthavioH/nature-care"

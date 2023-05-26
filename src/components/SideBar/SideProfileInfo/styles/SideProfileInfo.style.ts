@@ -19,6 +19,8 @@ export const SideBar = styled.aside`
     width: 100%;
     margin: 10px 0;
   }
+
+  user-select: none;
 `;
 
 export const SideBarHeaderWrapper = styled.div`

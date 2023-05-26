@@ -20,6 +20,8 @@ export const SectionWrapper = styled.div`
   @media (max-width: 768px) {
     width: 100%;
   }
+
+  user-select: none;
 `;
 
 export const WorkListWrapper = styled.div`
@@ -56,6 +58,8 @@ export const WorkExperienceItem = styled.div`
 
   background: #101213;
   box-shadow: 0px 0px 20px #000;
+
+  user-select: none;
 `;
 
 export const WorkExperienceHeaderWrapper = styled.div`
@@ -180,6 +184,8 @@ export const SideProjectWrapper = styled.div`
 
   background: #101213;
   box-shadow: 0px 0px 10px #000;
+
+  user-select: none;
 
   &:hover {
     cursor: pointer;
