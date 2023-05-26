@@ -21,6 +21,8 @@ export const ExperienceContentDescription = styled.p`
   font-weight: normal;
   text-align: justify;
   white-space: pre-line;
+
+  user-select: all;
 `;
 
 export const ExperienceContentSkills = styled.div`

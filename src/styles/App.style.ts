@@ -32,7 +32,7 @@ export const SectionsContainer = styled.div`
   align-items: center;
   justify-content: flex-start;
   gap: 32px;
-  
+
   @media (max-width: 768px) {
     width: 100%;
     margin-left: 0;
@@ -43,4 +43,6 @@ export const SectionTitle = styled.p`
   font-size: 50px;
   font-weight: bold;
   text-align: center;
+
+  user-select: none;
 `;
