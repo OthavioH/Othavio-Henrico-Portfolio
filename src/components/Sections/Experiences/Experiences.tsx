@@ -61,20 +61,20 @@ export default function Experiences() {
             projectName="RPG Sheet System"
             projectDate="2021/2023"
             thumbnailURL="https://user-images.githubusercontent.com/46772924/222441892-d5fcdfb9-8fa4-4f8c-9aad-9b370cb50236.png"
-            websiteURL="https://rpg-system-frontend-othavioh.vercel.app/"
+            websiteURL="https://aoprpg.vercel.app/"
             stacks={[Stack.ANGULAR, Stack.NODE, Stack.TYPESCRIPT]}
           />
           <SideProject
             projectName="Apex Tracker"
             projectDate="2023"
-            websiteURL="https://github.com/OthavioH/apex-tracker"
+            websiteURL="https://apextracker.vercel.app/"
             stacks={[Stack.REACT, Stack.TYPESCRIPT]}
           />
           <SideProject
             projectName="Marvel Comics E-Commerce"
             projectDate="2023"
             thumbnailURL="https://user-images.githubusercontent.com/46772924/227333692-31cb77ba-d153-4db8-9bce-afe85f59c523.png"
-            websiteURL="https://marvel-comics-ecommerce.vercel.app/"
+            websiteURL="https://comicshop.vercel.app/"
             stacks={[Stack.REACT, Stack.TYPESCRIPT]}
           />
           <SideProject
