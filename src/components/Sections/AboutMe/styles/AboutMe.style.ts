@@ -22,5 +22,5 @@ export const AboutMeText = styled.p`
 `;
 
 export const AboutMeArticle = styled(SectionArticle)`
-  animation: ${fadeAndSlideToLeftInAnimation} 1.5s ease-out;
+  animation: ${fadeAndSlideToLeftInAnimation} 0.5s ease-out;
 `;
