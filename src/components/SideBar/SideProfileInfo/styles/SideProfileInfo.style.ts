@@ -30,7 +30,7 @@ export const SideBarHeaderWrapper = styled.div`
   align-items: center;
   justify-content: flex-start;
 
-  animation: ${sideBarHeaderAnimation} 1.55s ease-out;
+  animation: ${sideBarHeaderAnimation} 0.8s ease-out;
 
   background-color: #101213;
   border-radius: 16px;
@@ -55,7 +55,7 @@ export const SideBarBio = styled.div`
 
   box-shadow: 0px 0px 20px #000;
 
-  animation: ${sideBarBioAnimation} 3s ease-out;
+  animation: ${sideBarBioAnimation} 1.5s ease-out;
 
   @media (max-width: 768px) {
     animation: ${sideBarBioAnimation} 1.6s ease-out;

@@ -41,7 +41,7 @@ export const WorkListWrapper = styled.div`
 `;
 
 export const ExpeciencesArticle = styled(SectionArticle)`
-  animation: ${fadeAndSlideUpAnimation} 2.5s ease-in-out;
+  animation: ${fadeAndSlideUpAnimation} 1.5s ease-in-out;
 `;
 
 export const WorkExperienceItem = styled.div`
