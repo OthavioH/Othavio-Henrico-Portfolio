@@ -58,6 +58,20 @@ export default function Experiences() {
         />
         <SideProjectsList>
           <SideProject
+            projectName="BeatStation Landing Page (In Progress)"
+            projectDate="2023"
+            websiteURL="https://beatstation.vercel.app/"
+            thumbnailURL="https://github.com/OthavioH/BeatStation_DiscordBot/assets/46772924/1934141c-460a-4a8e-8dcc-aa069f41ee97"
+            stacks={[Stack.REACT, Stack.TYPESCRIPT]}
+          />
+          <SideProject
+            projectName="BeatStation Discord Bot"
+            projectDate="2023"
+            websiteURL="https://github.com/OthavioH/BeatStation_DiscordBot"
+            thumbnailURL="https://github.com/OthavioH/BeatStation_DiscordBot/assets/46772924/1934141c-460a-4a8e-8dcc-aa069f41ee97"
+            stacks={[Stack.NODE, Stack.TYPESCRIPT]}
+          />
+          <SideProject
             projectName="RPG Sheet System"
             projectDate="2021/2023"
             thumbnailURL="https://user-images.githubusercontent.com/46772924/222441892-d5fcdfb9-8fa4-4f8c-9aad-9b370cb50236.png"
