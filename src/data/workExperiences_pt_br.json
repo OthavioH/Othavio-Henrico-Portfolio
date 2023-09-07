@@ -1,5 +1,19 @@
 [
   {
+    "id": 3,
+    "companyName": "NDD Tech",
+    "role": "Estagiário de Suporte",
+    "workingPeriod": "Ago/2023 - Trabalho Atual",
+    "description": "Responsável por atender chamados de clientes, resolver problemas com o software, realizar consultas e outros comandos em bancos de dados, comunicando com o time de desenvolvimento e de suporte e realizando consultas de Logs do software.",
+    "skillList": [
+      "MySQL",
+      "Resolução de Problemas",
+      "Atendimento ao Cliente",
+      "Bancos de Dados",
+      "Leitura de Logs"
+    ]
+  },
+  {
     "id": 1,
     "companyName": "Tokenlab Tecnologia da Informação LTDA",
     "role": "Web Developer",

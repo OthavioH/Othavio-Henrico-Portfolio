@@ -1,5 +1,19 @@
 [
   {
+    "id": 3,
+    "companyName": "NDD Tech",
+    "role": "Support Intern",
+    "workingPeriod": "Aug/2023 - Currently Working",
+    "description": "Responsible for answering customer calls, solving problems with the software, performing queries and other commands in databases, communicating with the development and support team and performing queries of the software's Logs.",
+    "skillList": [
+      "MySQL",
+      "Problem solving",
+      "Customer service",
+      "Database",
+      "Logs reading"
+    ]
+  },
+  {
     "id": 1,
     "companyName": "Tokenlab Tecnologia da Informação LTDA",
     "role": "Web Developer",
