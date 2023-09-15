@@ -58,6 +58,13 @@ export default function Experiences() {
         />
         <SideProjectsList>
           <SideProject
+            projectName="Upload AI"
+            projectDate="2023"
+            websiteURL="ots-upload-ai.vercel.app"
+            thumbnailURL="https://github.com/OthavioH/upload-ai-web/assets/46772924/74e3b12c-989c-4416-bb11-96dff5d47499"
+            stacks={[Stack.REACT, Stack.NODE, Stack.TYPESCRIPT]}
+          />
+          <SideProject
             projectName="BeatStation Landing Page (In Progress)"
             projectDate="2023"
             websiteURL="https://beatstation.vercel.app/"
