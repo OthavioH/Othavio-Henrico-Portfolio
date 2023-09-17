@@ -61,7 +61,7 @@ export default function Experiences() {
             projectName="Upload AI"
             projectDate="2023"
             websiteURL="ots-upload-ai.vercel.app"
-            thumbnailURL="https://github.com/OthavioH/upload-ai-web/assets/46772924/74e3b12c-989c-4416-bb11-96dff5d47499"
+            thumbnailURL="https://github.com/OthavioH/Othavio-Henrico-Portfolio/assets/46772924/e9d3731a-8b1f-49da-81ff-44d84d2820d0"
             stacks={[Stack.REACT, Stack.NODE, Stack.TYPESCRIPT]}
           />
           <SideProject
