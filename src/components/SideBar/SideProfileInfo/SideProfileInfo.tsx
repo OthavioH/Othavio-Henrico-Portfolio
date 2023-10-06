@@ -33,8 +33,8 @@ export default function SideProfileInfo() {
       <SideBarBio>
         <DivisionTitle>Stacks</DivisionTitle>
         <SideBarStacksList>
-          <SideStackComponent title="React JS" imgUrl="react_icon.png" />
-          <SideStackComponent title="Node JS" imgUrl="node_icon.png" />
+          <SideStackComponent title="React" imgUrl="react_icon.png" />
+          <SideStackComponent title="Node" imgUrl="node_icon.png" />
           <SideStackComponent title="Angular" imgUrl="angular_icon.png" />
           <SideStackComponent title="Java" imgUrl="java_icon.png" />
           <SideStackComponent title="Flutter" imgUrl="flutter_icon.png" />

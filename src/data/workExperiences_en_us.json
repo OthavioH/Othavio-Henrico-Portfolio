@@ -18,9 +18,9 @@
     "companyName": "Tokenlab Tecnologia da Informação LTDA",
     "role": "Web Developer",
     "workingPeriod": "May/2021 - Feb/2023",
-    "description": "At Tokenlab, I've developed some projects using technologies and concepts like Flutter Web, Angular, HTML, CSS, SASS, DDD (Domain Driven Design), Docker, BLoC, Design Patterns and Responsive Designs. I've also used Jira extensively for team management, as well as Figma, Bitbucket, and utilized SCRUM and Kanban. To improve my knowledge, I've also done some trainings from the company that showed some new technologies like Cloud Formations and AWS but also trainings to improve my skills with Node.js.\n\nProjects Completed:\n\nCinemark ATM - Self-service machine for the Cinemark cinema chain. The project was developed in Flutter Web, where I learned a lot about the technology, its widgets, design patterns that improve development, and enhanced my collaborative professional skills. - Aug/2021 - May/2022.\n\nMyPromo - Website and application that aims to assist consumers with their supermarket shopping. 2022 - November 2022.\n\nTokenlab Website Maintenance. 2022 - 2023.",
+    "description": "At Tokenlab, I've developed some projects using technologies and concepts like Flutter Web, Angular, HTML, CSS, SASS, DDD (Domain Driven Design), Docker, BLoC, Design Patterns and Responsive Designs. I've also used Jira extensively for team management, as well as Figma, Bitbucket, and utilized SCRUM and Kanban. To improve my knowledge, I've also done some trainings from the company that showed some new technologies like Cloud Formations and AWS but also trainings to improve my skills with Node.\n\nProjects Completed:\n\nCinemark ATM - Self-service machine for the Cinemark cinema chain. The project was developed in Flutter Web, where I learned a lot about the technology, its widgets, design patterns that improve development, and enhanced my collaborative professional skills. - Aug/2021 - May/2022.\n\nMyPromo - Website and application that aims to assist consumers with their supermarket shopping. 2022 - November 2022.\n\nTokenlab Website Maintenance. 2022 - 2023.",
     "skillList": [
-      "NodeJS",
+      "Node",
       "Typescript",
       "Angular",
       "Flutter",
