@@ -1,12 +1,26 @@
 [
   {
+    "id": 4,
+    "companyName": "NDD Tech",
+    "role": "Estagiário SRE",
+    "workingPeriod": "Nov/2023 - Trabalho Atual",
+    "description": "Responsável por realizar uma análise do banco de dados do projeto e corrigir divergências nos registros através de uma ferramenta automatizada.\nTambém sou responsável por monitorar os servidores e serviços do projeto.",
+    "skillList": [
+      "SQL",
+      "Resolução de Problemas",
+      "Bancos de Dados",
+      "Leitura de Logs",
+      "RabbitMQ"
+    ]
+  },
+  {
     "id": 3,
     "companyName": "NDD Tech",
     "role": "Estagiário de Suporte",
-    "workingPeriod": "Ago/2023 - Trabalho Atual",
+    "workingPeriod": "Ago/2023 - Nov/2023",
     "description": "Responsável por atender chamados de clientes, resolver problemas com o software, realizar consultas e outros comandos em bancos de dados, comunicando com o time de desenvolvimento e de suporte e realizando consultas de Logs do software.",
     "skillList": [
-      "MySQL",
+      "SQL",
       "Resolução de Problemas",
       "Atendimento ao Cliente",
       "Bancos de Dados",
