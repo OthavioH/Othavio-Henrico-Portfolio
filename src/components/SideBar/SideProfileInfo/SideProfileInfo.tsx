@@ -51,11 +51,13 @@ export default function SideProfileInfo() {
           <SocialLinks
             title="LinkedIn"
             imgUrl="linkedin.svg"
+            hoverImgUrl="linkedin_green.svg"
             url="https://linkedin.com/in/othavioh"
           />
           <SocialLinks
             title="GitHub"
             imgUrl="github.svg"
+            hoverImgUrl="github_green.svg"
             url="https://github.com/OthavioH"
           />
         </LinksWrapper>
