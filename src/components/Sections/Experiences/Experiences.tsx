@@ -68,7 +68,7 @@ export default function Experiences() {
             projectName="BeatStation Landing Page (In Progress)"
             projectDate="2023"
             websiteURL="https://beatstation.vercel.app/"
-            thumbnailURL="https://github.com/OthavioH/BeatStation_DiscordBot/assets/46772924/1934141c-460a-4a8e-8dcc-aa069f41ee97"
+            thumbnailURL="https://github.com/OthavioH/Othavio-Henrico-Portfolio/assets/46772924/efa7a3bd-5495-4272-a6c1-c7207b450ea4"
             stacks={[Stack.NEXT, Stack.TYPESCRIPT]}
           />
           <SideProject
