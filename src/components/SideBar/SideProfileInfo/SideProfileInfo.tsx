@@ -50,12 +50,12 @@ export default function SideProfileInfo() {
         <LinksWrapper>
           <SocialLinks
             title="LinkedIn"
-            imgUrl="linkedin_icon.png"
+            imgUrl="linkedin.svg"
             url="https://linkedin.com/in/othavioh"
           />
           <SocialLinks
             title="GitHub"
-            imgUrl="github_icon.png"
+            imgUrl="github.svg"
             url="https://github.com/OthavioH"
           />
         </LinksWrapper>
