@@ -51,7 +51,7 @@ export const SideBarBio = styled.div`
   background-color: #101213;
   border-radius: 16px;
   margin-top: 6px;
-  padding: 12px 20px;
+  padding: 12px 2rem;
 
   box-shadow: 0px 0px 20px #000;
 
@@ -59,21 +59,17 @@ export const SideBarBio = styled.div`
 
   @media (max-width: 768px) {
     animation: ${sideBarBioAnimation} 1.6s ease-out;
+    padding: 12px 60px;
   }
 `;
 
 export const SideBarStacksList = styled.div`
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
   margin-bottom: 16px;
-
-  @media (max-width: 768px) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
 `;
 
 export const ProfileIconWrapper = styled.div`
@@ -120,7 +116,7 @@ export const Role = styled.p`
 export const DivisionTitle = styled.p`
   width: 100%;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 600;
   text-align: center;
   text-decoration: 3px underline rgba(255, 255, 255, 0.2);
   text-underline-position: under;
@@ -128,17 +124,14 @@ export const DivisionTitle = styled.p`
 
 export const LinksWrapper = styled.div`
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
   padding-top: 20px;
 
-  @media (max-width: 768px) {
-    justify-content: center;
-    gap: 20px;
-  }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  aspect-ratio: 1 / auto;
 `;
 
 export const LanguageWrapper = styled.div`

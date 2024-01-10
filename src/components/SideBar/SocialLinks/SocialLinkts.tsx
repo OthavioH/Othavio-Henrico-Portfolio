@@ -9,28 +9,25 @@ interface SocialLinksProps {
 export default function SocialLinks({ title, imgUrl, url }: SocialLinksProps) {
   return (
     <SocialLinkComponent href={url} target="_blank">
-      <SocialLinkIcon src={imgUrl} />
+      <img src={imgUrl} width={30} height={30} />
       <SocialLinkTitle>{title}</SocialLinkTitle>
     </SocialLinkComponent>
   );
 }
 
 const SocialLinkComponent = styled.a`
-  display: flex;
-  flex-direction: row;
+  width: fit-content;
+  aspect-ratio: 1 / auto;
+  display: grid;
+  grid-template-columns: 30px auto;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
 
   text-decoration: none;
+  gap: 4px;
 `;
 
 const SocialLinkTitle = styled.p`
   font-size: 16px;
   font-weight: bold;
-  padding-left: 8px;
-`;
-
-const SocialLinkIcon = styled.img`
-  width: 30px;
-  height: 30px;
 `;

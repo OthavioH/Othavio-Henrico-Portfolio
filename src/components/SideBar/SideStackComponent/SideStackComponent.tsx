@@ -11,7 +11,7 @@ export default function SideStackComponent({
 }: SideStackComponentProps) {
   return (
     <StackComponent>
-      <StackIcon src={imgUrl} />
+      <img src={imgUrl} width={30} height={30} />
       <StackTitle>{title}</StackTitle>
     </StackComponent>
   );
@@ -19,19 +19,15 @@ export default function SideStackComponent({
 
 const StackComponent = styled.div`
   width: fit-content;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 30px auto;
   align-items: center;
-  padding-top: 20px;
+  justify-content: center;
+  gap: 4px;
+  aspect-ratio: 1/1;
 `;
 
 const StackTitle = styled.p`
   font-size: 16px;
   font-weight: bold;
-  padding-left: 4px;
-`;
-
-const StackIcon = styled.img`
-  width: 30px;
-  height: 30px;
 `;

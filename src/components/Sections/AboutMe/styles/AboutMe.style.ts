@@ -11,6 +11,10 @@ export const TextWrapper = styled.div`
 
   background: #101213;
   box-shadow: 0px 0px 20px #000;
+
+  @media (max-width: 768px) {
+    padding: 16px;
+  }
 `;
 
 export const AboutMeText = styled.p`
@@ -18,7 +22,12 @@ export const AboutMeText = styled.p`
   font-size: 16px;
 
   text-align: justify;
+  line-height: 1.6rem;
   white-space: pre-line;
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 `;
 
 export const AboutMeArticle = styled(SectionArticle)`
