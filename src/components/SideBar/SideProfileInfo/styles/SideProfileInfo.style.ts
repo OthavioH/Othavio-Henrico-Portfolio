@@ -66,10 +66,12 @@ export const SideBarBio = styled.div`
 export const SideBarStacksList = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, auto);
+  gap: 2rem;
   align-items: center;
   justify-content: center;
-  margin-bottom: 16px;
+
+  padding: 20px 0;
 `;
 
 export const ProfileIconWrapper = styled.div`
@@ -93,7 +95,7 @@ export const ProfileIcon = styled.img`
 
 export const ProfileName = styled.p`
   width: 100%;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 700;
   padding-top: 20px;
 
@@ -127,10 +129,10 @@ export const LinksWrapper = styled.div`
   padding-top: 20px;
 
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, auto);
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 2rem;
   aspect-ratio: 1 / auto;
 `;
 

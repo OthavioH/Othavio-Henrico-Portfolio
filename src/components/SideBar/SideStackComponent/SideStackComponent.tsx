@@ -24,7 +24,6 @@ const StackComponent = styled.div`
   align-items: center;
   justify-content: center;
   gap: 4px;
-  aspect-ratio: 1/1;
 `;
 
 const StackTitle = styled.p`
