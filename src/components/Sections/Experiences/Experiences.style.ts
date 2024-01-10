@@ -163,7 +163,6 @@ export const SideProjectImageFilter = styled.div`
   margin: 0;
   width: 100%;
   height: 100%;
-  backdrop-filter: saturate(0%);
   z-index: 9999;
   border-radius: 16px 16px 0px 0px;
 `;
@@ -190,10 +189,6 @@ export const SideProjectWrapper = styled.div`
   &:hover {
     cursor: pointer;
     transform: scale(90%);
-  }
-
-  &:hover ${SideProjectImageFilter} {
-    backdrop-filter: saturate(100%);
   }
 `;
 

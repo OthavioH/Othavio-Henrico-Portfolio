@@ -54,6 +54,34 @@ export default function Experiences() {
       </SectionWrapper>
       <SectionWrapper>
         <SectionSubtitle
+          subtitle={messages["main.experiences.clientsProjects.title"]}
+        />
+        <SideProjectsList>
+          <SideProject
+            projectName="Reufy Landing Page"
+            projectDate="2024"
+            websiteURL="https://reufy.quarterlab.com.br/"
+            thumbnailURL="https://github.com/OthavioH/Othavio-Henrico-Portfolio/assets/46772924/1ef4ed38-2284-49a5-ac40-7fa37ebd0413"
+            stacks={[Stack.NEXT, Stack.TYPESCRIPT]}
+          />
+          <SideProject
+            projectName="BeatStation Landing Page (In Progress)"
+            projectDate="2023"
+            websiteURL="https://beatstation.vercel.app/"
+            thumbnailURL="https://github.com/OthavioH/BeatStation_DiscordBot/assets/46772924/1934141c-460a-4a8e-8dcc-aa069f41ee97"
+            stacks={[Stack.NEXT, Stack.TYPESCRIPT]}
+          />
+          <SideProject
+            projectName="BeatStation Discord Bot"
+            projectDate="2023"
+            websiteURL="https://github.com/OthavioH/BeatStation_DiscordBot"
+            thumbnailURL="https://github.com/OthavioH/BeatStation_DiscordBot/assets/46772924/1934141c-460a-4a8e-8dcc-aa069f41ee97"
+            stacks={[Stack.NODE, Stack.TYPESCRIPT]}
+          />
+        </SideProjectsList>
+      </SectionWrapper>
+      <SectionWrapper>
+        <SectionSubtitle
           subtitle={messages["main.experiences.personalProjects.title"]}
         />
         <SideProjectsList>
@@ -63,20 +91,6 @@ export default function Experiences() {
             websiteURL="https://ots-upload-ai.vercel.app"
             thumbnailURL="https://github.com/OthavioH/Othavio-Henrico-Portfolio/assets/46772924/e9d3731a-8b1f-49da-81ff-44d84d2820d0"
             stacks={[Stack.REACT, Stack.NODE, Stack.TYPESCRIPT]}
-          />
-          <SideProject
-            projectName="BeatStation Landing Page (In Progress)"
-            projectDate="2023"
-            websiteURL="https://beatstation.vercel.app/"
-            thumbnailURL="https://github.com/OthavioH/BeatStation_DiscordBot/assets/46772924/1934141c-460a-4a8e-8dcc-aa069f41ee97"
-            stacks={[Stack.REACT, Stack.TYPESCRIPT]}
-          />
-          <SideProject
-            projectName="BeatStation Discord Bot"
-            projectDate="2023"
-            websiteURL="https://github.com/OthavioH/BeatStation_DiscordBot"
-            thumbnailURL="https://github.com/OthavioH/BeatStation_DiscordBot/assets/46772924/1934141c-460a-4a8e-8dcc-aa069f41ee97"
-            stacks={[Stack.NODE, Stack.TYPESCRIPT]}
           />
           <SideProject
             projectName="RPG Sheet System"

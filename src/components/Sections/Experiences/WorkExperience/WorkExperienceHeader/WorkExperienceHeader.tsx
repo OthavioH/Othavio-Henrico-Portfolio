@@ -8,8 +8,6 @@ import {
   ArrowDownIcon,
 } from "../../Experiences.style";
 
-import arrowDownIcon from "../../../../../assets/arrow down_icon.png";
-
 interface WorkExperienceHeaderProps {
   companyName: string;
   companyRole: string;
@@ -43,7 +41,7 @@ export default function WorkExperienceHeader({
       </WorkExperienceInfo>
       <IconButton onClick={setIsExpanded}>
         <ArrowDownIcon
-          src={arrowDownIcon}
+          src="arrow_down_icon.png"
           className={isExpanded ? "expanded" : "collapsed"}
         />
       </IconButton>

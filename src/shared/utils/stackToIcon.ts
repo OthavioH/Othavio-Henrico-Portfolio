@@ -1,27 +1,23 @@
-import reactIcon from "../../assets/react_icon.png";
-import nodeIcon from "../../assets/node_icon.png";
-import tsIcon from "../../assets/typescript_icon.png";
-import flutterIcon from "../../assets/flutter_icon.png";
-import javaIcon from "../../assets/java_icon.png";
-import angularIcon from "../../assets/angular_icon.png";
 import { Stack } from "../types/Stack";
 
-export default function stackToIcon(stack: Stack): any {
+export default function stackToIcon(stack: Stack): string | undefined {
   switch (stack) {
     case Stack.REACT:
-      return reactIcon;
+      return "react_icon.png";
+    case Stack.NEXT:
+      return "next_icon.svg";
     case Stack.NODE:
-      return nodeIcon;
+      return "node_icon.png";
     case Stack.TYPESCRIPT:
-      return tsIcon;
+      return "typescript_icon.png";
     case Stack.FLUTTER:
-      return flutterIcon;
+      return "flutter_icon.png";
     case Stack.JAVA:
-      return javaIcon;
+      return "java_icon.png";
     case Stack.ANGULAR:
-      return angularIcon;
+      return "angular_icon.png";
     case Stack.REACT_NATIVE:
-      return reactIcon;
+      return "react_icon.png";
     default:
       break;
   }

@@ -2,10 +2,13 @@
   "sidebar.role": "FullStack Developer",
   "sidebar.socialMediaTitle": "Social Media",
   "main.biography.title": "Biography",
-  "main.biography.text": "I'm a passionate and highly motivated software developer dedicated to creating innovative and functional technological solutions 😎. Currently pursuing a degree in Computer Science, I bring a unique combination of technical skills and practical experience. My journey includes internships at technology companies, where I've developed expertise in technologies like Angular, JavaScript, TypeScript, React, Next, Flutter, and much more.\n\nWith a solid academic background and a passion for learning, I've been involved in diverse projects, from creating innovative applications to developing interactive websites. I have a proven track record in team collaboration, problem-solving, and interpersonal skills, making me a valuable member for any development team.\n\nMy approach is customer-centered and quality-focused, always seeking to overcome technical challenges and create exceptional user experiences. I'm excited to continue my journey as a software developer, contributing to innovative projects and being part of dynamic teams that share my passion for technology.\n\nI'm a dreamer, brave and determined person wanting to get a challenging task and opportunity to change people's life and work.",
+  "main.biography.paragraph01": "I am a passionate and highly motivated software developer dedicated to creating innovative and functional technology solutions. Currently studying Computer Science, I bring a unique combination of technical skills and practical experience. My journey includes internships at technology companies, research projects, web projects for clients and also personal projects, where I developed expertise in technologies such as Angular, JavaScript, TypeScript, React, Next, Flutter, Node, Java and Python.",
+  "main.biography.paragraph02": "With a solid academic background and a passion for learning, I participated in several projects, from creating innovative applications to developing Landing Pages, E-commerce and other types of software, making me a valuable member of any development team.",
+  "main.biography.paragraph03": "My work is fast and focused on quality, always seeking to deliver the best experience to the end user in the shortest possible time, overcoming challenges that arise during the process.",
   "main.experiences.title": "Experiences",
   "main.experiences.career.title": "Career",
   "main.experiences.career.experience.title": "Assignments",
   "main.experiences.career.skills.title": "Skills And Techs",
+  "main.experiences.clientsProjects.title": "Clients",
   "main.experiences.personalProjects.title": "Personal Projects"
 }
