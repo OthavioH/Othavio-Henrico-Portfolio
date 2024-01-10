@@ -34,6 +34,7 @@ export default function SideProfileInfo() {
         <DivisionTitle>Stacks</DivisionTitle>
         <SideBarStacksList>
           <SideStackComponent title="React" imgUrl="react_icon.png" />
+          <SideStackComponent title="Next" imgUrl="next_icon.png" />
           <SideStackComponent title="Node" imgUrl="node_icon.png" />
           <SideStackComponent title="Angular" imgUrl="angular_icon.png" />
           <SideStackComponent title="Java" imgUrl="java_icon.png" />

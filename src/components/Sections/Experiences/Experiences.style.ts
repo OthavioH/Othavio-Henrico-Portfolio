@@ -127,11 +127,11 @@ export const ArrowDownIcon = styled.img`
   height: 50px;
 
   &.expanded {
-    animation: ${upsideDownAnimation} 0.5s ease-in-out forwards;
+    animation: ${upsideDownAnimation} 0.2s ease-in-out forwards;
   }
 
   &.collapsed {
-    animation: ${inverseUpsideDownAnimation} 0.5s ease-in-out forwards;
+    animation: ${inverseUpsideDownAnimation} 0.2s ease-in-out forwards;
   }
 `;
 
