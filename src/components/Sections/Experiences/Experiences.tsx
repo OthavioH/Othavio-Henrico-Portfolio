@@ -100,7 +100,7 @@ export default function Experiences() {
             stacks={[Stack.ANGULAR, Stack.NODE, Stack.TYPESCRIPT]}
           />
           <SideProject
-            projectName="Apex Tracker"
+            projectName="Apex Tracker (In Progress)"
             projectDate="2023"
             websiteURL="https://apextracker.vercel.app/"
             thumbnailURL="https://github.com/OthavioH/apex-tracker/assets/46772924/0ab7cb09-7e48-4f8c-8591-5d4c47a18679"
