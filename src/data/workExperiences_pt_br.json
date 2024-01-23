@@ -59,7 +59,7 @@
     "companyName": "IFMATH",
     "role": "FullStack Developer",
     "workingPeriod": "Fev/2020 - Abr/2021",
-    "description": "Desenvolvi parte do site do IFMATH, que é um software voltado para o ensino de matemática. O site foi feito com Angular, Java Spring Boot, Git, CSS, SASS, HTML, conceito TDD e designs responsivos.",
+    "description": "Desenvolvi parte do site do IFMATH, que é um software voltado para o ensino de matemática. O software foi criado com Angular, Java Spring Boot, Git, CSS, SASS, HTML, TDD e designs responsivos.",
     "skillList": [
       "TDD",
       "Java Spring Boot",
