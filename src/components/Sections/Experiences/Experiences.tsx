@@ -58,6 +58,13 @@ export default function Experiences() {
         />
         <SideProjectsList>
           <SideProject
+            projectName="3SAT Landing Page"
+            projectDate="2024"
+            websiteURL="http://3sat.quarterlab.com.br/"
+            thumbnailURL="https://github.com/OthavioH/Othavio-Henrico-Portfolio/assets/46772924/9a4f49d3-5a3f-4284-af5a-4424209f637b"
+            stacks={[Stack.NEXT, Stack.TYPESCRIPT]}
+          />
+          <SideProject
             projectName="Reufy Landing Page"
             projectDate="2024"
             websiteURL="https://reufy.quarterlab.com.br/"
