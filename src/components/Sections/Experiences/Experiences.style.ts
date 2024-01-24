@@ -196,6 +196,7 @@ export const SideProjectImage = styled.img`
   width: 100%;
   height: 120px;
   border-radius: 16px 16px 0px 0px;
+  object-fit: cover;
 
   overflow: hidden;
 `;
