@@ -20,19 +20,7 @@ export default function AboutMe() {
         <AboutMeText>
           <FormattedMessage
             description="Biography Text"
-            id="main.biography.paragraph01"
-          />
-          <br />
-          <br />
-          <FormattedMessage
-            description="Biography Text"
-            id="main.biography.paragraph02"
-          />
-          <br />
-          <br />
-          <FormattedMessage
-            description="Biography Text"
-            id="main.biography.paragraph03"
+            id="main.biography.text"
           />
         </AboutMeText>
       </TextWrapper>
