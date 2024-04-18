@@ -1,9 +1,25 @@
 [
   {
+    "id": 5,
+    "companyName": "UEEK Agência Digital",
+    "role": "Desenvolvedor Júnior",
+    "workingPeriod": "Abr/2024 - Trabalho Atual",
+    "description": "Como o desenvolvedor responsável por um dos projetos mobile da empresa, realizei:\n\n- Definição da arquitetura do projeto\n-Definição da documentação dos conventional commits\n-Desenvolvimento dos principal módulos do projeto.\n\nO projeto utiliza Flutter como sua principal tecnologia, mantendo um padrão próprio derivado do MVC e contando com as bibliotecas abaixo:\n- Riverpod -> Utilizado para a gerência de estado no Flutter.\n- Agora -> Utilizado para lidar com chamadas de vídeo e áudio dentro do aplicativo.\n- Dio -> Utilizado para lidar com chamadas para as APIs.",
+    "skillList": [
+      "Desenvolvimento de Software",
+      "Arquitetura de Software",
+      "Flutter",
+      "Riverpod",
+      "Dio",
+      "Gerenciamento de Configuração",
+      "Aplicativo com chamada de vídeo"
+    ]
+  },
+  {
     "id": 4,
     "companyName": "NDD Tech",
     "role": "Estagiário SRE",
-    "workingPeriod": "Nov/2023 - Trabalho Atual",
+    "workingPeriod": "Nov/2023 - Abr/2024",
     "description": "Responsável por realizar uma análise do banco de dados do projeto, corrigir divergências nos registros através de uma ferramenta automatizada e monitorar os servidores e serviços do projeto.",
     "skillList": [
       "SQL",
@@ -28,7 +44,7 @@
     ]
   },
   {
-    "id": 1,
+    "id": 2,
     "companyName": "Tokenlab Tecnologia da Informação LTDA",
     "role": "Web Developer",
     "workingPeriod": "May/2021 - Feb/2023",
@@ -55,7 +71,7 @@
     ]
   },
   {
-    "id": 2,
+    "id": 1,
     "companyName": "IFMATH",
     "role": "FullStack Developer",
     "workingPeriod": "Fev/2020 - Abr/2021",
